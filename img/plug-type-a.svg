@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 240" role="img" aria-label="Plugue tipo A e tomada japonesa">
+  <rect width="440" height="240" fill="#ffffff"/>
+  <!-- voltage badge -->
+  <g>
+    <rect x="176" y="14" width="88" height="34" rx="17" fill="#be1e2d"/>
+    <text x="220" y="37" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">100V</text>
+  </g>
+
+  <!-- PLUG (left) -->
+  <g>
+    <!-- cord -->
+    <path d="M125 58 C125 30 150 22 150 22" fill="none" stroke="#707a85" stroke-width="10" stroke-linecap="round"/>
+    <!-- body -->
+    <rect x="70" y="66" width="110" height="86" rx="16" fill="#eef0f2" stroke="#9aa3ad" stroke-width="3"/>
+    <!-- two flat parallel blades -->
+    <rect x="96" y="150" width="13" height="48" rx="3" fill="#6b7681"/>
+    <rect x="141" y="150" width="13" height="48" rx="3" fill="#6b7681"/>
+    <text x="125" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#1f2933">Plugue (Tipo A)</text>
+  </g>
+
+  <!-- fit arrow -->
+  <g fill="none" stroke="#9aa3ad" stroke-width="6" stroke-linecap="round">
+    <path d="M198 120 L242 120"/>
+    <path d="M232 110 L242 120 L232 130"/>
+  </g>
+
+  <!-- OUTLET (right) -->
+  <g>
+    <rect x="262" y="66" width="124" height="132" rx="18" fill="#fbfcfd" stroke="#9aa3ad" stroke-width="3"/>
+    <rect x="280" y="84" width="88" height="96" rx="10" fill="#ffffff" stroke="#cdd3da" stroke-width="2"/>
+    <!-- two vertical slots -->
+    <rect x="306" y="104" width="11" height="56" rx="3" fill="#2b3440"/>
+    <rect x="332" y="104" width="11" height="56" rx="3" fill="#2b3440"/>
+    <text x="324" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#1f2933">Tomada</text>
+  </g>
+</svg>

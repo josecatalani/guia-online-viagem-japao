@@ -1,0 +1,150 @@
+{
+  "trip": {
+    "title": "Viagem ao Japão",
+    "subtitle": "Tóquio com a família",
+    "departDate": "2026-10-10",
+    "returnDate": "2026-10-31",
+    "departFrom": "São Paulo (GRU)",
+    "connection": "Doha",
+    "destination": "Tóquio"
+  },
+  "currency": {
+    "from": "JPY",
+    "to": "BRL",
+    "defaultRate": 0.038,
+    "note": "Cotação aproximada de iene (¥) para real (R$). Conecte à internet para atualizar."
+  },
+  "hotels": [
+    {
+      "name": "Hotel (a definir)",
+      "area": "Bairro / região",
+      "checkIn": "2026-10-11",
+      "checkOut": "2026-10-31",
+      "address": "Endereço completo aqui",
+      "phone": "",
+      "mapQuery": "Tokyo Station",
+      "notes": "Edite este item em content.json com o hotel real."
+    }
+  ],
+  "itinerary": [
+    {
+      "date": "2026-10-10",
+      "title": "Embarque em São Paulo",
+      "items": [
+        { "time": "—", "place": "Aeroporto de Guarulhos (GRU)", "note": "Voo com conexão em Doha. Chegar com antecedência." }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "title": "Chegada em Tóquio",
+      "items": [
+        { "time": "Chegada", "place": "Aeroporto (Narita ou Haneda)", "note": "Pegar trem/ônibus até o hotel. Comprar cartão Suica/Pasmo." },
+        { "time": "Tarde", "place": "Check-in no hotel", "note": "Descansar do voo longo." }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Asakusa e arredores",
+      "items": [
+        { "time": "Manhã", "place": "Templo Senso-ji", "note": "Templo mais antigo de Tóquio. Rua Nakamise para lembranças." },
+        { "time": "Tarde", "place": "Tokyo Skytree", "note": "Vista da cidade do alto." }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Shibuya e Harajuku",
+      "items": [
+        { "time": "Manhã", "place": "Cruzamento de Shibuya", "note": "A travessia mais famosa do mundo. Estátua do Hachiko." },
+        { "time": "Tarde", "place": "Takeshita Street (Harajuku)", "note": "Lojas e doces. Parque Yoyogi por perto." }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "title": "A definir",
+      "items": [
+        { "time": "—", "place": "Dia livre", "note": "Preencha em content.json." }
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "title": "Retorno ao Brasil",
+      "items": [
+        { "time": "—", "place": "Aeroporto de Tóquio", "note": "Voo de volta para São Paulo." }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "category": "Básico",
+      "items": [
+        { "pt": "Olá", "jp": "こんにちは", "romaji": "Konnichiwa" },
+        { "pt": "Bom dia", "jp": "おはようございます", "romaji": "Ohayou gozaimasu" },
+        { "pt": "Boa noite", "jp": "こんばんは", "romaji": "Konbanwa" },
+        { "pt": "Obrigado(a)", "jp": "ありがとうございます", "romaji": "Arigatou gozaimasu" },
+        { "pt": "Por favor", "jp": "お願いします", "romaji": "Onegaishimasu" },
+        { "pt": "Com licença / Desculpe", "jp": "すみません", "romaji": "Sumimasen" },
+        { "pt": "Sim", "jp": "はい", "romaji": "Hai" },
+        { "pt": "Não", "jp": "いいえ", "romaji": "Iie" }
+      ]
+    },
+    {
+      "category": "Conversar",
+      "items": [
+        { "pt": "Você fala inglês?", "jp": "英語を話せますか？", "romaji": "Eigo o hanasemasu ka?" },
+        { "pt": "Eu não falo japonês", "jp": "日本語が話せません", "romaji": "Nihongo ga hanasemasen" },
+        { "pt": "Não entendi", "jp": "わかりません", "romaji": "Wakarimasen" },
+        { "pt": "Pode repetir, por favor?", "jp": "もう一度お願いします", "romaji": "Mou ichido onegaishimasu" }
+      ]
+    },
+    {
+      "category": "Compras e restaurante",
+      "items": [
+        { "pt": "Quanto custa?", "jp": "いくらですか？", "romaji": "Ikura desu ka?" },
+        { "pt": "Isto, por favor (apontando)", "jp": "これをください", "romaji": "Kore o kudasai" },
+        { "pt": "A conta, por favor", "jp": "お会計お願いします", "romaji": "Okaikei onegaishimasu" },
+        { "pt": "Está delicioso!", "jp": "おいしいです", "romaji": "Oishii desu" },
+        { "pt": "Água, por favor", "jp": "お水をください", "romaji": "Omizu o kudasai" }
+      ]
+    },
+    {
+      "category": "Se locomover",
+      "items": [
+        { "pt": "Onde fica o banheiro?", "jp": "トイレはどこですか？", "romaji": "Toire wa doko desu ka?" },
+        { "pt": "Onde fica a estação?", "jp": "駅はどこですか？", "romaji": "Eki wa doko desu ka?" },
+        { "pt": "Estou perdido(a)", "jp": "道に迷いました", "romaji": "Michi ni mayoimashita" }
+      ]
+    }
+  ],
+  "practical": [
+    { "icon": "💴", "title": "Dinheiro", "text": "Moeda: iene (¥). Leve dinheiro em espécie — muitos lugares ainda não aceitam cartão. Caixas das lojas 7-Eleven aceitam cartões brasileiros." },
+    { "icon": "🔌", "title": "Tomada e energia", "text": "Voltagem: 100V. Tomada tipo A (dois pinos chatos). Leve um adaptador universal. A maioria dos carregadores funciona em 100–240V, confira na etiqueta.", "images": [
+      { "src": "./img/plug-type-a.svg", "caption": "Padrão japonês: Tipo A — dois pinos chatos (100V)" },
+      { "src": "./img/plug-adapter.svg", "caption": "Leve um adaptador universal" }
+    ] },
+    { "icon": "🚆", "title": "Transporte", "text": "Compre um cartão Suica ou Pasmo e recarregue — serve para metrô, trem e ônibus. Encoste o cartão na catraca.", "images": [
+      { "src": "./img/suica.svg", "caption": "Cartão Suica (verde)" },
+      { "src": "./img/pasmo.svg", "caption": "Cartão Pasmo (rosa)" }
+    ] },
+    { "icon": "💁", "title": "Gorjeta", "text": "Não se dá gorjeta no Japão. Pode até ser considerado falta de educação. O serviço já está incluso." },
+    { "icon": "🚯", "title": "Costumes", "text": "Não coma andando na rua. Fale baixo no transporte público. Lixeiras são raras — guarde o lixo até achar uma." }
+  ],
+  "emergency": {
+    "police": "110",
+    "ambulanceFire": "119",
+    "helpPhrase": { "pt": "Socorro! Preciso de ajuda.", "jp": "助けてください！", "romaji": "Tasukete kudasai!" },
+    "ambulancePhrase": { "pt": "Chame uma ambulância, por favor!", "jp": "救急車を呼んでください！", "romaji": "Kyuukyuusha o yonde kudasai!" },
+    "embassy": {
+      "name": "Embaixada do Brasil em Tóquio",
+      "address": "2-11-12 Kioicho, Chiyoda-ku, Tokyo 102-0094",
+      "phone": "+81 3-3404-5211",
+      "mapQuery": "Embaixada do Brasil Toquio"
+    },
+    "hospital": {
+      "name": "St. Luke's International Hospital (atende em inglês)",
+      "address": "9-1 Akashicho, Chuo-ku, Tokyo",
+      "phone": "+81 3-3541-5151",
+      "mapQuery": "St. Luke's International Hospital Tokyo",
+      "note": "Confirme o hospital mais perto do hotel e atualize aqui."
+    }
+  }
+}

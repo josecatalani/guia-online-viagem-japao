@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Guia da Viagem ao Japão</title>
+  <meta name="description" content="Guia de bolso para a viagem ao Japão: roteiro, frases, conversor e emergência." />
+  <meta name="theme-color" content="#be1e2d" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./icon.svg" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <style>
+    :root { --pico-font-size: 18px; }
+    body { padding-bottom: 5rem; }
+    main.container { padding-top: 1rem; }
+
+    /* App bar */
+    .appbar {
+      display: flex; align-items: center; gap: .75rem;
+      position: sticky; top: 0; z-index: 10;
+      background: var(--pico-background-color);
+      padding: .6rem 0; margin-bottom: .5rem;
+      border-bottom: 1px solid var(--pico-muted-border-color);
+    }
+    .appbar h1 { font-size: 1.25rem; margin: 0; }
+    .appbar .back {
+      width: auto; margin: 0; padding: .4rem .8rem; font-size: 1.1rem;
+    }
+
+    /* Home countdown */
+    .countdown {
+      text-align: center; padding: 1.5rem 1rem; border-radius: 1rem;
+      background: var(--pico-primary-background); color: var(--pico-primary-inverse);
+      margin-bottom: 1.25rem;
+    }
+    .countdown .big { font-size: 3rem; font-weight: 800; line-height: 1; display: block; }
+    .countdown .label { font-size: 1.05rem; opacity: .95; }
+
+    /* Home grid */
+    .home-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
+    .home-grid button {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: .4rem; min-height: 120px; margin: 0; font-size: 1.15rem; font-weight: 600;
+      white-space: normal; line-height: 1.2;
+    }
+    .home-grid .emoji { font-size: 2.4rem; line-height: 1; }
+
+    /* Floating emergency button */
+    .sos {
+      position: fixed; right: 1rem; bottom: 1rem; z-index: 20;
+      width: auto; margin: 0; border-radius: 999px; padding: .9rem 1.2rem;
+      font-weight: 800; font-size: 1.1rem;
+      background: #be1e2d; border-color: #be1e2d; color: #fff;
+      box-shadow: 0 6px 18px rgba(0,0,0,.25);
+    }
+
+    /* Phrase / list rows */
+    .row { display: flex; align-items: center; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--pico-muted-border-color); }
+    .row:last-child { border-bottom: 0; }
+    .row .grow { flex: 1; min-width: 0; }
+    .row .pt { font-weight: 600; }
+    .row .jp { font-size: 1.25rem; }
+    .row .romaji { color: var(--pico-muted-color); font-size: .95rem; }
+    .speak {
+      flex: 0 0 auto; width: 3rem; height: 3rem; border-radius: 999px;
+      margin: 0; padding: 0; font-size: 1.3rem; display: grid; place-items: center;
+    }
+
+    /* Converter */
+    .conv-field { margin-bottom: 1rem; }
+    .conv-field label { font-size: 1.1rem; font-weight: 600; }
+    .conv-field input { font-size: 1.6rem; height: auto; padding: .7rem; }
+    .rate-line { text-align: center; color: var(--pico-muted-color); margin: .5rem 0 .25rem; }
+    .rate-status { margin: 0 0 1rem; font-size: .9rem; }
+
+    /* Practical-info images */
+    .imgs { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: .7rem; }
+    .imgs figure { margin: 0; flex: 1 1 140px; text-align: center; }
+    .imgs img {
+      width: 100%; max-width: 240px; height: auto; border-radius: .7rem;
+      background: #fff; border: 1px solid var(--pico-muted-border-color);
+    }
+    .imgs figcaption { font-size: .85rem; color: var(--pico-muted-color); margin-top: .3rem; line-height: 1.25; }
+
+    /* Emergency cards */
+    .sos-call {
+      display: block; text-align: center; font-size: 1.4rem; font-weight: 800;
+      padding: 1.1rem; margin-bottom: .8rem; border-radius: .8rem;
+      background: #be1e2d; color: #fff; text-decoration: none;
+    }
+    .big-phrase { text-align: center; padding: 1rem; }
+    .big-phrase .jp { font-size: 2rem; }
+
+    .hidden { display: none !important; }
+    .muted { color: var(--pico-muted-color); }
+    article header { font-weight: 700; }
+    a.maplink { display: inline-block; margin-top: .3rem; }
+    .center { text-align: center; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="appbar">
+      <button id="backBtn" class="back secondary outline hidden" aria-label="Voltar">←</button>
+      <h1 id="appTitle">Guia do Japão</h1>
+    </div>
+
+    <!-- HOME -->
+    <section id="view-home" data-view>
+      <div class="countdown" id="countdown">
+        <span class="big" id="countdownBig">—</span>
+        <span class="label" id="countdownLabel"></span>
+      </div>
+      <div class="home-grid">
+        <button data-go="itinerary"><span class="emoji">🗓️</span>Roteiro</button>
+        <button data-go="currency"><span class="emoji">💴</span>Conversor</button>
+        <button data-go="phrases"><span class="emoji">💬</span>Frases</button>
+        <button data-go="hotels"><span class="emoji">🏨</span>Hotéis</button>
+        <button data-go="practical"><span class="emoji">ℹ️</span>Informações</button>
+        <button data-go="emergency" class="contrast"><span class="emoji">🆘</span>Emergência</button>
+      </div>
+    </section>
+
+    <!-- ITINERARY -->
+    <section id="view-itinerary" data-view class="hidden">
+      <div id="itineraryList"></div>
+    </section>
+
+    <!-- CURRENCY -->
+    <section id="view-currency" data-view class="hidden">
+      <div class="conv-field">
+        <label for="yen">Iene (¥)</label>
+        <input id="yen" type="text" inputmode="numeric" placeholder="0" autocomplete="off" />
+      </div>
+      <div class="center muted">⇅</div>
+      <div class="conv-field">
+        <label for="brl">Real (R$)</label>
+        <input id="brl" type="text" inputmode="numeric" placeholder="0,00" autocomplete="off" />
+      </div>
+      <p class="rate-line" id="rateLine"></p>
+      <p class="rate-status center muted" id="rateStatus"></p>
+      <details>
+        <summary>Ajustar cotação manualmente (opcional)</summary>
+        <small class="muted">Use só se estiver sem internet e quiser corrigir a cotação.</small>
+        <label for="rateInput">Quantos reais vale 1 iene?</label>
+        <input id="rateInput" type="text" inputmode="decimal" autocomplete="off" />
+      </details>
+    </section>
+
+    <!-- PHRASES -->
+    <section id="view-phrases" data-view class="hidden">
+      <p class="muted">Toque no <strong>🔊</strong> para o celular falar em japonês.</p>
+      <div id="phrasesList"></div>
+    </section>
+
+    <!-- HOTELS -->
+    <section id="view-hotels" data-view class="hidden">
+      <div id="hotelsList"></div>
+    </section>
+
+    <!-- PRACTICAL -->
+    <section id="view-practical" data-view class="hidden">
+      <div id="practicalList"></div>
+    </section>
+
+    <!-- EMERGENCY -->
+    <section id="view-emergency" data-view class="hidden">
+      <div id="emergencyContent"></div>
+    </section>
+
+    <p id="loadError" class="hidden" style="color:#be1e2d">Não foi possível carregar o conteúdo. Verifique sua conexão e recarregue.</p>
+  </main>
+
+  <button class="sos" data-go="emergency">🆘 Emergência</button>
+
+  <script>
+  (function () {
+    "use strict";
+
+    var DATA = null;
+    var rate = 0.038;
+    var RATE_KEY = "japao_rate";
+    var RATE_DATE_KEY = "japao_rate_date";
+
+    var fmtBRL = new Intl.NumberFormat("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    var fmtYen = new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 0 });
+
+    function $(id) { return document.getElementById(id); }
+    function el(tag, attrs, children) {
+      var n = document.createElement(tag);
+      if (attrs) Object.keys(attrs).forEach(function (k) {
+        if (k === "class") n.className = attrs[k];
+        else if (k === "html") n.innerHTML = attrs[k];
+        else if (k === "text") n.textContent = attrs[k];
+        else n.setAttribute(k, attrs[k]);
+      });
+      (children || []).forEach(function (c) { if (c) n.appendChild(c); });
+      return n;
+    }
+
+    /* ---------- Navigation ---------- */
+    var TITLES = {
+      home: "Guia do Japão", itinerary: "Roteiro", currency: "Conversor",
+      phrases: "Frases úteis", hotels: "Hotéis", practical: "Informações", emergency: "Emergência"
+    };
+    function showView(name) {
+      var sections = document.querySelectorAll("[data-view]");
+      for (var i = 0; i < sections.length; i++) sections[i].classList.add("hidden");
+      var target = $("view-" + name) || $("view-home");
+      target.classList.remove("hidden");
+      $("appTitle").textContent = TITLES[name] || TITLES.home;
+      $("backBtn").classList.toggle("hidden", name === "home");
+      window.scrollTo(0, 0);
+      if (location.hash !== "#" + name) history.replaceState(null, "", "#" + name);
+    }
+    function currentView() { return (location.hash || "#home").slice(1); }
+
+    document.addEventListener("click", function (e) {
+      var go = e.target.closest("[data-go]");
+      if (go) { showView(go.getAttribute("data-go")); }
+    });
+    $("backBtn").addEventListener("click", function () { showView("home"); });
+    window.addEventListener("hashchange", function () { showView(currentView()); });
+
+    /* ---------- Speech ---------- */
+    function speak(text) {
+      if (!("speechSynthesis" in window)) { alert("Seu aparelho não suporta falar em voz alta."); return; }
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = "ja-JP";
+      u.rate = 0.85;
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(u);
+    }
+    function speakBtn(text) {
+      var b = el("button", { class: "speak outline", "aria-label": "Ouvir em japonês" }, []);
+      b.textContent = "🔊";
+      b.addEventListener("click", function () { speak(text); });
+      return b;
+    }
+
+    /* ---------- Countdown ---------- */
+    function dateOnly(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+    function parseDate(s) { var p = s.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
+    function daysBetween(a, b) { return Math.round((dateOnly(b) - dateOnly(a)) / 86400000); }
+
+    function renderCountdown() {
+      var t = DATA.trip;
+      var today = new Date();
+      var depart = parseDate(t.departDate);
+      var ret = parseDate(t.returnDate);
+      var big = $("countdownBig"), label = $("countdownLabel");
+      var toDepart = daysBetween(today, depart);
+      if (toDepart > 0) {
+        big.textContent = toDepart;
+        label.textContent = toDepart === 1 ? "dia para embarcar! ✈️" : "dias para embarcar! ✈️";
+      } else if (daysBetween(today, ret) >= 0) {
+        var dayN = daysBetween(depart, today) + 1;
+        var total = daysBetween(depart, ret) + 1;
+        big.textContent = "Dia " + dayN;
+        label.textContent = "de " + total + " no Japão 🗾";
+      } else {
+        big.textContent = "🏠";
+        label.textContent = "A viagem terminou. Bem-vindos de volta!";
+      }
+    }
+
+    /* ---------- Itinerary ---------- */
+    var WEEKDAYS = ["domingo","segunda","terça","quarta","quinta","sexta","sábado"];
+    var MONTHS = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+    function fmtDay(s) {
+      var d = parseDate(s);
+      return WEEKDAYS[d.getDay()] + ", " + d.getDate() + " de " + MONTHS[d.getMonth()];
+    }
+    function renderItinerary() {
+      var wrap = $("itineraryList");
+      wrap.innerHTML = "";
+      var days = (DATA.itinerary || []).slice().sort(function (a, b) { return a.date < b.date ? -1 : 1; });
+      days.forEach(function (day) {
+        var header = el("header", {}, []);
+        header.appendChild(el("div", { text: day.title }));
+        header.appendChild(el("small", { class: "muted", text: fmtDay(day.date) }));
+        var body = el("div", {}, []);
+        (day.items || []).forEach(function (it) {
+          var row = el("div", { class: "row" }, []);
+          var g = el("div", { class: "grow" }, []);
+          g.appendChild(el("div", { class: "pt", text: it.place }));
+          if (it.time && it.time !== "—") g.appendChild(el("small", { class: "muted", text: it.time }));
+          if (it.note) g.appendChild(el("div", { class: "romaji", text: it.note }));
+          row.appendChild(g);
+          body.appendChild(row);
+        });
+        wrap.appendChild(el("article", {}, [header, body]));
+      });
+    }
+
+    /* ---------- Currency ---------- */
+    function parseNum(s) {
+      if (!s) return 0;
+      var n = parseFloat(String(s).replace(/\s/g, "").replace(/\./g, "").replace(",", "."));
+      return isNaN(n) ? 0 : n;
+    }
+    // Calculator-style mask: digits fill from the right. Yen = whole units,
+    // Real = units + cents (2 casas). Reformata o próprio campo e devolve o número.
+    function maskField(elm, decimals) {
+      var digits = (String(elm.value).match(/\d/g) || []).join("");
+      if (!digits) { elm.value = ""; return 0; }
+      var num = decimals > 0 ? parseInt(digits, 10) / Math.pow(10, decimals) : parseInt(digits, 10);
+      elm.value = (decimals > 0 ? fmtBRL : fmtYen).format(num);
+      return num;
+    }
+    function setRateLine() {
+      $("rateLine").textContent = "1.000 ¥ ≈ R$ " + fmtBRL.format(1000 * rate);
+      var d = localStorage.getItem(RATE_DATE_KEY);
+      var status;
+      if (!d) status = "Cotação aproximada.";
+      else if (d === "manual") status = "Cotação ajustada manualmente.";
+      else status = "Cotação automática · atualizada em " + d;
+      $("rateStatus").textContent = status;
+      $("rateInput").value = String(rate).replace(".", ",");
+    }
+    function fromYen() {
+      var y = maskField($("yen"), 0);
+      $("brl").value = y ? fmtBRL.format(y * rate) : "";
+    }
+    function fromBrl() {
+      var b = maskField($("brl"), 2);
+      $("yen").value = b ? fmtYen.format(b / rate) : "";
+    }
+    function bindCurrency() {
+      $("yen").addEventListener("input", fromYen);
+      $("brl").addEventListener("input", fromBrl);
+      $("rateInput").addEventListener("input", function () {
+        var r = parseNum($("rateInput").value);
+        if (r > 0) { rate = r; localStorage.setItem(RATE_KEY, String(r)); localStorage.setItem(RATE_DATE_KEY, "manual"); setRateLine(); fromYen(); }
+      });
+    }
+    function loadRate() {
+      var saved = parseFloat(localStorage.getItem(RATE_KEY));
+      rate = saved > 0 ? saved : (DATA.currency && DATA.currency.defaultRate) || 0.038;
+      setRateLine();
+    }
+    function updateRateOnline() {
+      fetch("https://open.er-api.com/v6/latest/JPY")
+        .then(function (r) { return r.json(); })
+        .then(function (j) {
+          if (j && j.rates && j.rates.BRL) {
+            rate = j.rates.BRL;
+            localStorage.setItem(RATE_KEY, String(rate));
+            var d = new Date();
+            localStorage.setItem(RATE_DATE_KEY, d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear());
+            setRateLine();
+            if (currentView() === "currency") fromYen();
+          }
+        })
+        .catch(function () { /* offline: mantém a cotação salva */ });
+    }
+
+    /* ---------- Phrases ---------- */
+    function phraseRow(p) {
+      var g = el("div", { class: "grow" }, []);
+      g.appendChild(el("div", { class: "pt", text: p.pt }));
+      g.appendChild(el("div", { class: "jp", text: p.jp }));
+      g.appendChild(el("div", { class: "romaji", text: p.romaji }));
+      return el("div", { class: "row" }, [g, speakBtn(p.jp)]);
+    }
+    function renderPhrases() {
+      var wrap = $("phrasesList");
+      wrap.innerHTML = "";
+      (DATA.phrases || []).forEach(function (group) {
+        var header = el("header", { text: group.category }, []);
+        var body = el("div", {}, []);
+        (group.items || []).forEach(function (p) { body.appendChild(phraseRow(p)); });
+        wrap.appendChild(el("article", {}, [header, body]));
+      });
+    }
+
+    /* ---------- Hotels ---------- */
+    function mapLink(query, label) {
+      var a = el("a", { class: "maplink", href: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(query), target: "_blank", rel: "noopener" }, []);
+      a.textContent = "📍 " + (label || "Ver no mapa");
+      return a;
+    }
+    function renderHotels() {
+      var wrap = $("hotelsList");
+      wrap.innerHTML = "";
+      (DATA.hotels || []).forEach(function (h) {
+        var header = el("header", {}, []);
+        header.appendChild(el("div", { text: h.name }));
+        if (h.area) header.appendChild(el("small", { class: "muted", text: h.area }));
+        var body = el("div", {}, []);
+        if (h.checkIn || h.checkOut) body.appendChild(el("p", { text: "Entrada: " + (h.checkIn ? fmtDay(h.checkIn) : "?") + " · Saída: " + (h.checkOut ? fmtDay(h.checkOut) : "?") }));
+        if (h.address) body.appendChild(el("p", { text: h.address }));
+        if (h.phone) { var pa = el("p", {}, []); pa.appendChild(el("a", { href: "tel:" + h.phone, text: "📞 " + h.phone })); body.appendChild(pa); }
+        if (h.notes) body.appendChild(el("p", { class: "muted", text: h.notes }));
+        if (h.mapQuery || h.address) body.appendChild(mapLink(h.mapQuery || h.address));
+        wrap.appendChild(el("article", {}, [header, body]));
+      });
+    }
+
+    /* ---------- Practical ---------- */
+    function renderPractical() {
+      var wrap = $("practicalList");
+      wrap.innerHTML = "";
+      (DATA.practical || []).forEach(function (item) {
+        var header = el("header", { text: (item.icon ? item.icon + " " : "") + item.title }, []);
+        var parts = [header, el("p", { text: item.text })];
+        if (item.images && item.images.length) {
+          var imgs = el("div", { class: "imgs" }, []);
+          item.images.forEach(function (im) {
+            var fig = el("figure", {}, []);
+            fig.appendChild(el("img", { src: im.src, alt: im.caption || item.title, loading: "lazy" }));
+            if (im.caption) fig.appendChild(el("figcaption", { text: im.caption }));
+            imgs.appendChild(fig);
+          });
+          parts.push(imgs);
+        }
+        wrap.appendChild(el("article", {}, parts));
+      });
+    }
+
+    /* ---------- Emergency ---------- */
+    function renderEmergency() {
+      var e = DATA.emergency || {};
+      var wrap = $("emergencyContent");
+      wrap.innerHTML = "";
+
+      if (e.ambulanceFire) {
+        var a = el("a", { class: "sos-call", href: "tel:" + e.ambulanceFire }, []);
+        a.textContent = "🚑 Ambulância / Bombeiros — " + e.ambulanceFire;
+        wrap.appendChild(a);
+      }
+      if (e.police) {
+        var p = el("a", { class: "sos-call", href: "tel:" + e.police }, []);
+        p.style.background = "#1b3a8b";
+        p.textContent = "🚓 Polícia — " + e.police;
+        wrap.appendChild(p);
+      }
+
+      [e.helpPhrase, e.ambulancePhrase].forEach(function (ph) {
+        if (!ph) return;
+        var box = el("div", { class: "big-phrase" }, []);
+        box.appendChild(el("div", { class: "pt", text: ph.pt }));
+        box.appendChild(el("div", { class: "jp", text: ph.jp }));
+        box.appendChild(el("div", { class: "romaji", text: ph.romaji }));
+        var b = speakBtn(ph.jp); b.style.margin = ".5rem auto 0";
+        box.appendChild(b);
+        wrap.appendChild(el("article", {}, [box]));
+      });
+
+      [["🏥 Hospital", e.hospital], ["🇧🇷 Embaixada do Brasil", e.embassy]].forEach(function (pair) {
+        var info = pair[1]; if (!info) return;
+        var header = el("header", { text: pair[0] }, []);
+        var body = el("div", {}, []);
+        body.appendChild(el("p", { class: "pt", text: info.name }));
+        if (info.address) body.appendChild(el("p", { text: info.address }));
+        if (info.phone) { var pa = el("p", {}, []); pa.appendChild(el("a", { href: "tel:" + info.phone, text: "📞 " + info.phone })); body.appendChild(pa); }
+        if (info.note) body.appendChild(el("p", { class: "muted", text: info.note }));
+        if (info.mapQuery || info.address) body.appendChild(mapLink(info.mapQuery || info.address));
+        wrap.appendChild(el("article", {}, [header, body]));
+      });
+    }
+
+    /* ---------- Boot ---------- */
+    function renderAll() {
+      renderCountdown();
+      renderItinerary();
+      renderPhrases();
+      renderHotels();
+      renderPractical();
+      renderEmergency();
+      loadRate();
+      bindCurrency();
+    }
+
+    fetch("./content.json", { cache: "no-cache" })
+      .then(function (r) { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+      .then(function (data) {
+        DATA = data;
+        document.title = "Guia · " + (data.trip && data.trip.title || "Viagem ao Japão");
+        renderAll();
+        showView(currentView());
+        updateRateOnline();
+      })
+      .catch(function (err) {
+        console.error(err);
+        $("loadError").classList.remove("hidden");
+      });
+
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("./sw.js").catch(function (e) { console.warn("SW falhou", e); });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

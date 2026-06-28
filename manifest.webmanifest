@@ -1,0 +1,15 @@
+{
+  "name": "Guia da Viagem ao Japão",
+  "short_name": "Guia Japão",
+  "description": "Roteiro, frases, conversor de moeda e emergência para a viagem a Tóquio.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#be1e2d",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
