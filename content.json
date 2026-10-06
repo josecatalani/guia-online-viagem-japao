@@ -73,6 +73,329 @@
       ]
     }
   ],
+  "locations": [
+    {
+      "name": "Templo Sensō-ji",
+      "area": "Asakusa, Tóquio",
+      "history": "A tradição local conta que uma imagem de Kannon foi encontrada no rio Sumida por pescadores em 628. O Sensō-ji cresceu em torno dessa imagem e é considerado o templo mais antigo de Tóquio. O salão atual foi reconstruído após a Segunda Guerra Mundial.",
+      "details": [
+        "A entrada principal é o portão Kaminarimon, famoso pela grande lanterna vermelha.",
+        "Atravesse a rua comercial Nakamise para encontrar lembranças e comidas locais.",
+        "O recinto do templo é gratuito; confirme os horários dos edifícios antes da visita."
+      ],
+      "mapQuery": "Templo Senso-ji Tokyo"
+    },
+    {
+      "name": "Tokyo Skytree",
+      "area": "Sumida, Tóquio",
+      "history": "Inaugurada em 2012, a Tokyo Skytree tem 634 metros e foi construída como torre de transmissão e mirante. Seu nome foi escolhido para evocar uma árvore que se ergue em direção ao céu.",
+      "details": [
+        "Os observatórios oferecem vistas panorâmicas de Tóquio; em dias claros, pode ser possível avistar o Monte Fuji.",
+        "Há restaurantes, lojas e um aquário no complexo Tokyo Solamachi, na base da torre.",
+        "Os ingressos para os observatórios podem ser comprados com antecedência."
+      ],
+      "mapQuery": "Tokyo Skytree"
+    },
+    {
+      "name": "Cruzamento de Shibuya",
+      "area": "Shibuya, Tóquio",
+      "history": "O cruzamento em frente à estação de Shibuya ficou conhecido pelas travessias simultâneas em várias direções e se tornou uma imagem emblemática da cidade moderna. Nas proximidades fica a estátua de Hachikō, o cão lembrado por esperar seu tutor na estação.",
+      "details": [
+        "A estátua de Hachikō é um ponto popular de encontro, perto da saída Hachikō da estação.",
+        "Para observar o cruzamento do alto, procure um mirante ou café nas redondezas; o acesso pode exigir reserva ou consumo.",
+        "Atravesse pelas faixas e siga os sinais, junto com os demais pedestres."
+      ],
+      "mapQuery": "Shibuya Scramble Crossing Tokyo"
+    },
+    {
+      "name": "Takeshita Street",
+      "area": "Harajuku, Tóquio",
+      "history": "A rua Takeshita tornou-se conhecida como vitrine da moda jovem e da cultura pop de Harajuku. Suas lojas pequenas, doces coloridos e estilos ousados atraem visitantes do Japão e de outros países.",
+      "details": [
+        "A rua é curta e costuma ficar bem cheia, especialmente nos fins de semana.",
+        "Experimente observar as vitrines e provar crepes ou outras guloseimas vendidas na região.",
+        "O Parque Yoyogi e o santuário Meiji ficam a uma caminhada de distância."
+      ],
+      "mapQuery": "Takeshita Street Harajuku Tokyo"
+    },
+    {
+      "name": "Parque Yoyogi",
+      "area": "Shibuya, Tóquio",
+      "history": "A área serviu como alojamento da Vila Olímpica durante os Jogos de Tóquio de 1964. O parque público foi aberto em 1967 e hoje é um dos grandes espaços verdes da região central da cidade.",
+      "details": [
+        "É um bom lugar para descansar entre Harajuku e Shibuya; há gramados, caminhos e áreas arborizadas.",
+        "Nos fins de semana podem acontecer encontros, apresentações e eventos; a programação varia.",
+        "A entrada no parque é gratuita."
+      ],
+      "mapQuery": "Yoyogi Park Tokyo"
+    },
+    {
+      "name": "Fushimi Inari Taisha",
+      "area": "Fushimi, Quioto",
+      "history": "Santuário xintoísta dedicado a Inari, divindade associada ao arroz e à prosperidade. A tradição situa sua fundação no ano de 711; os milhares de portais torii vermelhos foram doados ao longo do tempo por pessoas e empresas.",
+      "details": ["O caminho dos torii sobe o Monte Inari; é possível fazer apenas parte do percurso.", "As estátuas de raposas representam mensageiras de Inari."],
+      "mapQuery": "Fushimi Inari Taisha Kyoto"
+    },
+    {
+      "name": "Rua comercial Nakamise",
+      "area": "Asakusa, Tóquio",
+      "history": "Uma das ruas comerciais mais antigas do Japão, a Nakamise conduz do portão Kaminarimon ao portão Hōzōmon do Sensō-ji. Lojas e barracas atendem visitantes do templo há séculos.",
+      "details": ["Prove doces tradicionais e procure lembranças locais.", "A rua costuma ficar movimentada; confira os horários das lojas."],
+      "mapQuery": "Nakamise Shopping Street Tokyo"
+    },
+    {
+      "name": "Templo Sōgenji (Kappa-dera)",
+      "area": "Taitō, Tóquio",
+      "history": "Templo budista de Asakusa conhecido pelo apelido Kappa-dera, ligado às lendas dos kappa, criaturas do folclore japonês. O templo preserva objetos e histórias associados a essas figuras.",
+      "details": ["É um templo menor e tranquilo, diferente dos pontos mais movimentados de Asakusa.", "Respeite o silêncio e as regras indicadas no local."],
+      "mapQuery": "Sogenji Kappa-dera Tokyo"
+    },
+    {
+      "name": "Parque Ueno",
+      "area": "Ueno, Tóquio",
+      "history": "Aberto como parque público em 1873, o Ueno ocupa parte do antigo terreno do templo Kan'ei-ji. É conhecido por seus museus, pelo zoológico e pelas cerejeiras na primavera.",
+      "details": ["O parque reúne museus e atrações que podem exigir ingresso separado.", "A floração das cerejeiras atrai grandes multidões na primavera."],
+      "mapQuery": "Ueno Park Tokyo"
+    },
+    {
+      "name": "Nikkō",
+      "area": "Prefeitura de Tochigi",
+      "history": "Nikkō é uma região montanhosa célebre por seus santuários e templos históricos, entre eles o santuário Tōshō-gū, dedicado a Tokugawa Ieyasu. O conjunto de santuários e templos de Nikkō é reconhecido como Patrimônio Mundial da UNESCO.",
+      "details": ["A região também tem paisagens naturais, cachoeiras e trilhas; deslocamentos podem levar tempo.", "Confira os horários de transporte e abertura dos templos antes de sair de Tóquio."],
+      "mapQuery": "Nikko Toshogu Shrine Japan"
+    },
+    {
+      "name": "Kiyomizu-dera",
+      "area": "Higashiyama, Quioto",
+      "history": "Templo budista fundado no século VIII e dedicado a Kannon. Seu salão principal, reconstruído no século XVII, é famoso pelo grande terraço de madeira construído sem pregos.",
+      "details": ["O terraço oferece vista sobre Quioto e as colinas ao redor.", "As ruas históricas Ninenzaka e Sannenzaka ficam no caminho até o templo.", "A entrada no recinto é paga; confirme horários e condições de visita."],
+      "mapQuery": "Kiyomizu-dera Kyoto"
+    },
+    {
+      "name": "Ninenzaka",
+      "area": "Higashiyama, Quioto",
+      "history": "Ladeira histórica de Higashiyama, conhecida por suas casas tradicionais de madeira e por conectar a região ao entorno do Kiyomizu-dera. O nome significa 'ladeira de dois anos' e é associado a uma antiga tradição local.",
+      "details": ["Há lojas, casas de chá e restaurantes ao longo do percurso.", "O calçamento pode ser irregular e íngreme; use calçados confortáveis."],
+      "mapQuery": "Ninenzaka Kyoto"
+    },
+    {
+      "name": "Sannenzaka",
+      "area": "Higashiyama, Quioto",
+      "history": "Também chamada de Sanneizaka, esta ladeira histórica leva em direção ao Kiyomizu-dera e preserva a paisagem tradicional de Higashiyama. Seu nome é ligado à peregrinação ao templo Kiyomizu.",
+      "details": ["Explore com calma as lojas e vielas próximas.", "A rua tem degraus e trechos inclinados; caminhe com atenção, especialmente em dias de chuva."],
+      "mapQuery": "Sannenzaka Kyoto"
+    },
+    {
+      "name": "Santuário Yasaka",
+      "area": "Gion, Quioto",
+      "history": "Santuário xintoísta no limite entre Gion e Higashiyama, associado à proteção contra doenças e epidemias. É o centro do Gion Matsuri, um dos festivais mais conhecidos do Japão.",
+      "details": ["O acesso ao recinto é gratuito e há lanternas tradicionais no portão e no salão principal.", "O Parque Maruyama fica ao lado do santuário."],
+      "mapQuery": "Yasaka Shrine Kyoto"
+    },
+    {
+      "name": "Rio Kamo (Kamogawa)",
+      "area": "Quioto",
+      "history": "O rio Kamo atravessa Quioto e faz parte da vida da cidade há séculos. Suas margens são um espaço popular de caminhada e descanso para moradores e visitantes.",
+      "details": ["Os trechos perto de Sanjō e Shijō são agradáveis para caminhar.", "No verão, restaurantes da região central podem montar terraços voltados para o rio."],
+      "mapQuery": "Kamogawa River Kyoto"
+    },
+    {
+      "name": "Kinkaku-ji (Templo do Pavilhão Dourado)",
+      "area": "Kita, Quioto",
+      "history": "O Pavilhão Dourado começou como vila do xogum Ashikaga Yoshimitsu no século XIV e tornou-se templo zen após sua morte. O edifício atual foi reconstruído em 1955, depois de um incêndio.",
+      "details": ["O pavilhão se reflete no lago Kyōko-chi; o percurso de visita segue os caminhos do jardim.", "A entrada é paga e o interior do pavilhão não é aberto ao público."],
+      "mapQuery": "Kinkaku-ji Kyoto"
+    },
+    {
+      "name": "Gion",
+      "area": "Higashiyama, Quioto",
+      "history": "Bairro histórico que cresceu em torno do santuário Yasaka e de casas de chá. Gion é conhecido pela arquitetura tradicional e pela cultura das geiko e maiko de Quioto.",
+      "details": ["A rua Hanamikoji é uma das vias mais conhecidas do bairro.", "Peça autorização antes de fotografar pessoas e respeite áreas privadas; algumas ruas têm restrições de fotografia."],
+      "mapQuery": "Gion Kyoto"
+    },
+    {
+      "name": "Nara",
+      "area": "Prefeitura de Nara",
+      "history": "Nara foi a capital do Japão de 710 a 784, período em que importantes templos e obras de arte budistas foram construídos. A cidade preserva monumentos históricos e o Parque de Nara, onde vivem cervos.",
+      "details": ["O templo Tōdai-ji abriga o Grande Buda de Nara.", "Os cervos são animais selvagens: alimente-os apenas com biscoitos próprios e siga as orientações locais."],
+      "mapQuery": "Nara Park Japan"
+    },
+    {
+      "name": "Otagi Nenbutsu-ji",
+      "area": "Arashiyama, Quioto",
+      "history": "Templo budista ligado à tradição de 1.200 pequenas estátuas de rakan, discípulos de Buda, esculpidas por participantes de uma oficina conduzida no século XX.",
+      "details": ["As estátuas têm expressões diferentes e ficam espalhadas pelo jardim.", "Fica mais afastado do centro de Arashiyama; planeje o transporte de ida e volta."],
+      "mapQuery": "Otagi Nenbutsuji Kyoto"
+    },
+    {
+      "name": "Adashino Nenbutsuji",
+      "area": "Arashiyama, Quioto",
+      "history": "Templo memorial em Adashino, área historicamente associada aos ritos funerários. O recinto reúne numerosas imagens de pedra dedicadas aos mortos e um caminho de bambus.",
+      "details": ["É um local de contemplação; mantenha silêncio e respeito.", "A visita pode ser combinada com Otagi Nenbutsu-ji, que fica nas proximidades."],
+      "mapQuery": "Adashino Nenbutsuji Kyoto"
+    },
+    {
+      "name": "Gio-ji",
+      "area": "Arashiyama, Quioto",
+      "history": "Pequeno templo conhecido por seu jardim coberto de musgo e bosque de bambus. A tradição associa o lugar à história de Gio, uma dançarina do período Heian retratada no clássico literário 'O Conto dos Heike'.",
+      "details": ["O jardim muda de aparência conforme a estação e a umidade.", "É um espaço compacto e tranquilo; siga as regras de fotografia indicadas no local."],
+      "mapQuery": "Gioji Temple Kyoto"
+    },
+    {
+      "name": "Seiryō-ji",
+      "area": "Saga, Quioto",
+      "history": "Templo budista de Saga também conhecido como Saga Shakadō. Seu principal objeto de devoção é uma imagem de Buda Shakyamuni associada a uma antiga tradição trazida da China.",
+      "details": ["O recinto inclui salões históricos e um jardim.", "Confira no local quais áreas estão abertas e se há taxa de entrada."],
+      "mapQuery": "Seiryoji Temple Kyoto"
+    },
+    {
+      "name": "Ponte Togetsukyō",
+      "area": "Arashiyama, Quioto",
+      "history": "A ponte sobre o rio Ōi é um marco de Arashiyama. Seu nome, 'ponte que cruza a lua', é associado a uma observação do imperador Kameyama durante um passeio de barco no período medieval.",
+      "details": ["A ponte é um ponto de vista para o rio e as montanhas de Arashiyama.", "A paisagem muda bastante entre a floração das cerejeiras e as cores do outono."],
+      "mapQuery": "Togetsukyo Bridge Kyoto"
+    },
+    {
+      "name": "Floresta de Bambu de Arashiyama",
+      "area": "Arashiyama, Quioto",
+      "history": "Caminho entre altos bambuzais na região de Sagano, parte de uma paisagem tradicional de Arashiyama. O som do vento no bambu é valorizado no Japão como uma das paisagens sonoras do país.",
+      "details": ["O caminho é público e costuma ficar muito movimentado durante o dia.", "Visite cedo para encontrar menos gente e não saia dos caminhos demarcados."],
+      "mapQuery": "Arashiyama Bamboo Forest Kyoto"
+    },
+    {
+      "name": "Dōtonbori",
+      "area": "Namba, Osaka",
+      "history": "A área se desenvolveu ao longo de um canal escavado no início do século XVII por Dōton Yasui. Com teatros, restaurantes e letreiros luminosos, tornou-se um dos centros mais conhecidos de entretenimento e gastronomia de Osaka.",
+      "details": ["Procure os letreiros icônicos e caminhe pela margem do canal.", "A região é famosa por takoyaki e okonomiyaki; costuma ficar cheia à noite."],
+      "mapQuery": "Dotonbori Osaka"
+    },
+    {
+      "name": "Mercado Kuromon",
+      "area": "Namba, Osaka",
+      "history": "Mercado coberto com longa tradição comercial, conhecido como uma das cozinhas de Osaka. Suas barracas vendem frutos do mar, produtos frescos, comidas preparadas e ingredientes locais.",
+      "details": ["Algumas barracas oferecem porções para comer na hora; confirme preços antes de pedir.", "O horário de funcionamento varia de loja para loja."],
+      "mapQuery": "Kuromon Market Osaka"
+    },
+    {
+      "name": "Santuário Namba Yasaka",
+      "area": "Namba, Osaka",
+      "history": "Santuário xintoísta de Namba conhecido pelo salão em forma de cabeça de leão, chamado Ema-den. A boca aberta simboliza a expulsão de forças negativas e a atração de boa sorte.",
+      "details": ["A grande estrutura em forma de leão é o destaque do recinto.", "Verifique os horários de acesso, que podem diferir dos de outros santuários."],
+      "mapQuery": "Namba Yasaka Shrine Osaka"
+    },
+    {
+      "name": "Castelo de Osaka",
+      "area": "Chūō, Osaka",
+      "history": "A construção original começou em 1583 por iniciativa de Toyotomi Hideyoshi. Após guerras e incêndios, a torre principal atual foi reconstruída em 1931 e hoje abriga um museu sobre a história do castelo.",
+      "details": ["O parque ao redor é amplo e especialmente popular durante a floração das cerejeiras.", "A entrada na torre-museu é paga; o parque tem áreas de acesso livre."],
+      "mapQuery": "Osaka Castle"
+    },
+    {
+      "name": "Shitennō-ji",
+      "area": "Tennōji, Osaka",
+      "history": "Templo budista tradicionalmente fundado em 593 pelo príncipe Shōtoku, importante apoiador da introdução do budismo no Japão. Embora os edifícios tenham sido reconstruídos ao longo dos séculos, o templo preserva um antigo plano arquitetônico.",
+      "details": ["O recinto inclui um pagode de cinco andares e um jardim; algumas áreas cobram entrada.", "Consulte os horários dos salões e do jardim antes da visita."],
+      "mapQuery": "Shitennoji Osaka"
+    },
+    {
+      "name": "Shinsekai",
+      "area": "Naniwa, Osaka",
+      "history": "Bairro de entretenimento desenvolvido no início do século XX. Seu primeiro parque de diversões e a torre Tsūtenkaku foram inspirados em referências internacionais da época; a área mantém uma atmosfera retrô.",
+      "details": ["Experimente kushikatsu, especialidade local de espetinhos empanados.", "A torre Tsūtenkaku fica no coração do bairro."],
+      "mapQuery": "Shinsekai Osaka"
+    },
+    {
+      "name": "Tsūtenkaku",
+      "area": "Shinsekai, Osaka",
+      "history": "A primeira torre Tsūtenkaku foi inaugurada em 1912. A torre atual, aberta em 1956, tornou-se um símbolo de Shinsekai e oferece mirantes sobre Osaka.",
+      "details": ["Há observatórios e atrações dentro da torre; algumas exigem ingresso.", "A área de Shinsekai ao redor é conhecida pelos restaurantes e letreiros luminosos."],
+      "mapQuery": "Tsutenkaku Tower Osaka"
+    },
+    {
+      "name": "Memorial da Paz de Hiroshima (Cúpula da Bomba Atômica)",
+      "area": "Parque Memorial da Paz, Hiroshima",
+      "history": "Antigo edifício de exposições industriais que permaneceu parcialmente de pé após a explosão atômica de 6 de agosto de 1945. Preservado como memorial, é conhecido como Genbaku Dome e integra o Patrimônio Mundial da UNESCO.",
+      "details": ["Observe o edifício a partir das áreas públicas ao redor; não é permitido entrar.", "A visita é um momento de memória e reflexão; mantenha respeito no local."],
+      "mapQuery": "Hiroshima Peace Memorial Genbaku Dome"
+    },
+    {
+      "name": "Cenotáfio das Vítimas da Bomba Atômica",
+      "area": "Parque Memorial da Paz, Hiroshima",
+      "history": "Monumento em forma de arco que abriga os nomes conhecidos das vítimas da bomba atômica. A inscrição deseja que as vítimas descansem em paz e que a tragédia não se repita.",
+      "details": ["O monumento está alinhado visualmente com a Chama da Paz e a Cúpula da Bomba Atômica.", "É um local de homenagem; mantenha silêncio e respeito."],
+      "mapQuery": "Cenotaph for the A-bomb Victims Hiroshima"
+    },
+    {
+      "name": "Chama da Paz de Hiroshima",
+      "area": "Parque Memorial da Paz, Hiroshima",
+      "history": "Chama acesa em 1964 no Parque Memorial da Paz. Seu desenho representa mãos abertas e sua chama permanece acesa como símbolo de esperança por um mundo sem armas nucleares.",
+      "details": ["A chama pode ser vista junto ao cenotáfio e à Cúpula da Bomba Atômica.", "A visita ao parque é gratuita e ao ar livre."],
+      "mapQuery": "Flame of Peace Hiroshima"
+    },
+    {
+      "name": "Parque Memorial da Paz de Hiroshima",
+      "area": "Centro de Hiroshima",
+      "history": "Parque construído no antigo distrito de Nakajima, devastado pela bomba atômica de 1945. Reúne monumentos, memoriais e o Museu Memorial da Paz, dedicados à memória das vítimas e à promoção da paz.",
+      "details": ["Reserve tempo para visitar o museu; a visita costuma ser com ingresso.", "O parque conecta vários memoriais, incluindo o cenotáfio, a Chama da Paz e a Cúpula da Bomba Atômica."],
+      "mapQuery": "Hiroshima Peace Memorial Park"
+    },
+    {
+      "name": "Hondōri",
+      "area": "Centro de Hiroshima",
+      "history": "Arcada comercial coberta no centro de Hiroshima, com lojas, cafés e restaurantes. A região comercial foi reconstruída após a guerra e hoje é um dos principais pontos de compras da cidade.",
+      "details": ["A arcada permite caminhar protegido do sol e da chuva.", "Fica a uma caminhada do Parque Memorial da Paz."],
+      "mapQuery": "Hondori Shopping Street Hiroshima"
+    },
+    {
+      "name": "Santuário de Itsukushima",
+      "area": "Miyajima, Hiroshima",
+      "history": "Santuário xintoísta dedicado às divindades do mar e construído sobre a água para preservar a ilha considerada sagrada. A tradição do santuário remonta ao século VI; o complexo atual é especialmente associado ao século XII.",
+      "details": ["A aparência do santuário e do grande torii muda conforme a maré.", "Há taxa de entrada; consulte a tábua de marés para planejar a visita."],
+      "mapQuery": "Itsukushima Shrine Miyajima"
+    },
+    {
+      "name": "Grande torii de Miyajima (Otorii)",
+      "area": "Miyajima, Hiroshima",
+      "history": "O grande portão torii marca a entrada simbólica do santuário de Itsukushima. A estrutura atual foi construída no século XIX e fica no mar, diante da ilha de Miyajima.",
+      "details": ["Na maré alta parece flutuar; na maré baixa é possível caminhar até perto da base.", "Confira os horários das marés e respeite as áreas isoladas durante obras ou manutenção."],
+      "mapQuery": "Itsukushima Otorii Miyajima"
+    },
+    {
+      "name": "Teleférico de Miyajima (Miyajima Ropeway)",
+      "area": "Miyajima, Hiroshima",
+      "history": "O teleférico sobe pelo Monte Misen e dá acesso a mirantes sobre o Mar Interior de Seto. O monte é considerado sagrado e tem trilhas e locais de culto ligados à tradição budista da ilha.",
+      "details": ["A estação superior não fica no topo: chegar ao cume exige caminhada adicional.", "Operação e horários podem mudar por clima; confira avisos no dia."],
+      "mapQuery": "Miyajima Ropeway"
+    },
+    {
+      "name": "Lago Kawaguchi",
+      "area": "Yamanashi, região dos Cinco Lagos de Fuji",
+      "history": "Um dos Cinco Lagos de Fuji, formado por atividade vulcânica aos pés do Monte Fuji. Suas margens são um dos pontos conhecidos para observar e fotografar a montanha.",
+      "details": ["A visibilidade do Fuji depende do clima e pode mudar rapidamente.", "Há passeios de barco, mirantes e transporte local ao redor do lago."],
+      "mapQuery": "Lake Kawaguchi Japan"
+    },
+    {
+      "name": "Monte Fuji",
+      "area": "Yamanashi e Shizuoka",
+      "history": "Com 3.776 metros, o Fuji é a montanha mais alta do Japão e um símbolo cultural e espiritual do país. Foi inscrito como Patrimônio Mundial da UNESCO por seu significado artístico e religioso.",
+      "details": ["A temporada oficial de escalada costuma ocorrer no verão e varia conforme a rota e o ano.", "Para apenas apreciar a montanha, confira a previsão e escolha um mirante; nuvens podem cobrir o cume."],
+      "mapQuery": "Mount Fuji Japan"
+    },
+    {
+      "name": "Oshino Hakkai",
+      "area": "Oshino, Yamanashi",
+      "history": "Conjunto de oito lagoas alimentadas por água de degelo do Monte Fuji, filtrada pela rocha vulcânica. As fontes e a paisagem da vila estão ligadas à relação histórica da região com a montanha.",
+      "details": ["As lagoas têm água muito clara; não entre nem jogue objetos nelas.", "A área pode ficar movimentada e algumas atrações ou estacionamentos têm cobrança."],
+      "mapQuery": "Oshino Hakkai Japan"
+    },
+    {
+      "name": "Pagode Chūreitō",
+      "area": "Fujiyoshida, Yamanashi",
+      "history": "Pagode memorial de cinco andares no Parque Arakurayama Sengen, construído em 1963 em homenagem aos moradores da região mortos em guerras. É um dos mirantes mais conhecidos para fotografar o Fuji.",
+      "details": ["O mirante exige subir uma longa escadaria; use calçados confortáveis.", "Na primavera, as cerejeiras atraem muitos visitantes; a vista do Fuji depende do tempo."],
+      "mapQuery": "Chureito Pagoda Japan"
+    }
+  ],
   "phrases": [
     {
       "category": "Básico",

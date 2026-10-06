@@ -48,6 +48,13 @@
     }
     .home-grid .emoji { font-size: 2.4rem; line-height: 1; }
 
+    /* Local guide */
+    .location-form select { margin: .5rem 0 1rem; }
+    .location-form button { width: 100%; }
+    #locationResults article h2 { font-size: 1.25rem; margin-bottom: .2rem; }
+    #locationResults h3 { font-size: 1rem; margin: 1rem 0 .4rem; }
+    #locationResults ul { margin-bottom: .5rem; }
+
     /* Floating emergency button */
     .sos {
       position: fixed; right: 1rem; bottom: 1rem; z-index: 20;
@@ -116,6 +123,7 @@
       </div>
       <div class="home-grid">
         <button data-go="itinerary"><span class="emoji">🗓️</span>Roteiro</button>
+        <button data-go="locations"><span class="emoji">📍</span>Guia de locais</button>
         <button data-go="currency"><span class="emoji">💴</span>Conversor</button>
         <button data-go="phrases"><span class="emoji">💬</span>Frases</button>
         <button data-go="hotels"><span class="emoji">🏨</span>Hotéis</button>
@@ -127,6 +135,19 @@
     <!-- ITINERARY -->
     <section id="view-itinerary" data-view class="hidden">
       <div id="itineraryList"></div>
+    </section>
+
+    <!-- LOCAL GUIDE -->
+    <section id="view-locations" data-view class="hidden">
+      <p>Escolha um lugar e toque em <strong>Confirmar e ir</strong> para ver a história e dicas.</p>
+      <form id="locationForm" class="location-form">
+        <label for="locationSelect">Local para conhecer</label>
+        <select id="locationSelect" name="location">
+          <option value="">Selecione um local</option>
+        </select>
+        <button type="submit">Confirmar e ir</button>
+      </form>
+      <div id="locationResults" aria-live="polite"></div>
     </section>
 
     <!-- CURRENCY -->
@@ -203,7 +224,7 @@
 
     /* ---------- Navigation ---------- */
     var TITLES = {
-      home: "Guia do Japão", itinerary: "Roteiro", currency: "Conversor",
+      home: "Guia do Japão", itinerary: "Roteiro", locations: "Guia de locais", currency: "Conversor",
       phrases: "Frases úteis", hotels: "Hotéis", practical: "Informações", emergency: "Emergência"
     };
     function showView(name) {
@@ -294,6 +315,66 @@
         });
         wrap.appendChild(el("article", {}, [header, body]));
       });
+    }
+
+    /* ---------- Local guide ---------- */
+    function locationCity(place) {
+      var area = (place.area || "").toLowerCase();
+      if (area.indexOf("tóquio") !== -1) return "Tóquio";
+      if (area.indexOf("quioto") !== -1) return "Quioto";
+      if (area.indexOf("osaka") !== -1) return "Osaka";
+      if (area.indexOf("miyajima") !== -1) return "Miyajima";
+      if (area.indexOf("hiroshima") !== -1) return "Hiroshima";
+      if (area.indexOf("nikkō") !== -1 || area.indexOf("tochigi") !== -1) return "Nikkō";
+      if (area.indexOf("nara") !== -1) return "Nara";
+      if (area.indexOf("yamanashi") !== -1) return "Monte Fuji";
+      return place.area || "Outros locais";
+    }
+
+    function renderLocations() {
+      var select = $("locationSelect");
+      var results = $("locationResults");
+      var form = $("locationForm");
+      var groups = {};
+      select.innerHTML = "";
+      select.appendChild(el("option", { value: "", text: "Selecione um local" }));
+      results.innerHTML = "";
+
+      (DATA.locations || []).forEach(function (place, index) {
+        var city = locationCity(place);
+        if (!groups[city]) {
+          groups[city] = el("optgroup", { label: city }, []);
+          select.appendChild(groups[city]);
+        }
+        groups[city].appendChild(el("option", { value: String(index), text: place.name }));
+      });
+
+      form.onsubmit = function (event) {
+        event.preventDefault();
+        results.innerHTML = "";
+        if (select.value === "") {
+          results.appendChild(el("p", { class: "muted", role: "status", text: "Selecione um local para continuar." }));
+          return;
+        }
+
+        var place = DATA.locations[Number(select.value)];
+        if (!place) return;
+        var header = el("header", {}, [el("h2", { text: place.name })]);
+        if (place.area) header.appendChild(el("small", { class: "muted", text: place.area }));
+        var body = el("div", {}, []);
+        if (place.history) {
+          body.appendChild(el("h3", { text: "História" }));
+          body.appendChild(el("p", { text: place.history }));
+        }
+        if (place.details && place.details.length) {
+          body.appendChild(el("h3", { text: "O que ver e dicas" }));
+          var list = el("ul", {}, []);
+          place.details.forEach(function (detail) { list.appendChild(el("li", { text: detail })); });
+          body.appendChild(list);
+        }
+        if (place.mapQuery) body.appendChild(mapLink(place.mapQuery, "Abrir no Google Maps"));
+        results.appendChild(el("article", {}, [header, body]));
+      };
     }
 
     /* ---------- Currency ---------- */
@@ -467,6 +548,7 @@
     function renderAll() {
       renderCountdown();
       renderItinerary();
+      renderLocations();
       renderPhrases();
       renderHotels();
       renderPractical();
