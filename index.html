@@ -54,6 +54,13 @@
     #locationResults article h2 { font-size: 1.25rem; margin-bottom: .2rem; }
     #locationResults h3 { font-size: 1rem; margin: 1rem 0 .4rem; }
     #locationResults ul { margin-bottom: .5rem; }
+    .location-photo { margin: 0 0 1rem; }
+    .location-photo img {
+      display: block; width: 100%; max-height: 22rem; object-fit: cover;
+      border-radius: .7rem; background: var(--pico-muted-border-color);
+    }
+    .location-photo figcaption { margin-top: .4rem; font-size: .75rem; line-height: 1.35; }
+    .location-facts { margin-top: 1rem; }
 
     /* Floating emergency button */
     .sos {
@@ -359,9 +366,35 @@
 
         var place = DATA.locations[Number(select.value)];
         if (!place) return;
+        var extra = (DATA.locationExtras && DATA.locationExtras[place.name]) || {};
         var header = el("header", {}, [el("h2", { text: place.name })]);
         if (place.area) header.appendChild(el("small", { class: "muted", text: place.area }));
         var body = el("div", {}, []);
+        if (extra.photo) {
+          var photo = el("img", {
+            src: extra.photo.src,
+            alt: "Foto de " + place.name,
+            loading: "lazy",
+            decoding: "async"
+          });
+          photo.addEventListener("error", function () {
+            if (extra.photo.remote && photo.getAttribute("src") !== extra.photo.remote) {
+              photo.src = extra.photo.remote;
+              return;
+            }
+            var figure = photo.closest("figure");
+            if (figure) figure.remove();
+          });
+          var caption = el("figcaption", {}, []);
+          caption.appendChild(el("a", { href: extra.photo.source, target: "_blank", rel: "noopener", text: extra.photo.title || "Ver foto original" }));
+          caption.appendChild(document.createTextNode(" · foto: "));
+          if (extra.photo.creatorUrl) caption.appendChild(el("a", { href: extra.photo.creatorUrl, target: "_blank", rel: "noopener", text: extra.photo.creator }));
+          else caption.appendChild(document.createTextNode(extra.photo.creator || "autor não identificado"));
+          caption.appendChild(document.createTextNode(" · licença: "));
+          caption.appendChild(el("a", { href: extra.photo.licenseUrl, target: "_blank", rel: "noopener", text: extra.photo.license }));
+          caption.appendChild(document.createTextNode(" · imagem redimensionada para o guia"));
+          body.appendChild(el("figure", { class: "location-photo" }, [photo, caption]));
+        }
         if (place.history) {
           body.appendChild(el("h3", { text: "História" }));
           body.appendChild(el("p", { text: place.history }));
@@ -371,6 +404,16 @@
           var list = el("ul", {}, []);
           place.details.forEach(function (detail) { list.appendChild(el("li", { text: detail })); });
           body.appendChild(list);
+        }
+        if (extra.context) {
+          body.appendChild(el("h3", { text: "Mais detalhes" }));
+          body.appendChild(el("p", { text: extra.context }));
+        }
+        if (extra.curiosities && extra.curiosities.length) {
+          body.appendChild(el("h3", { class: "location-facts", text: "✨ Curiosidades" }));
+          var facts = el("ul", {}, []);
+          extra.curiosities.forEach(function (fact) { facts.appendChild(el("li", { text: fact })); });
+          body.appendChild(facts);
         }
         if (place.mapQuery) body.appendChild(mapLink(place.mapQuery, "Abrir no Google Maps"));
         results.appendChild(el("article", {}, [header, body]));
@@ -557,11 +600,14 @@
       bindCurrency();
     }
 
-    fetch("./content.json", { cache: "no-cache" })
-      .then(function (r) { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
-      .then(function (data) {
-        DATA = data;
-        document.title = "Guia · " + (data.trip && data.trip.title || "Viagem ao Japão");
+    Promise.all([
+      fetch("./content.json", { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error("content.json http " + r.status); return r.json(); }),
+      fetch("./location-extras.json", { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error("location-extras.json http " + r.status); return r.json(); })
+    ])
+      .then(function (loaded) {
+        DATA = loaded[0];
+        DATA.locationExtras = loaded[1];
+        document.title = "Guia · " + (DATA.trip && DATA.trip.title || "Viagem ao Japão");
         renderAll();
         showView(currentView());
         updateRateOnline();

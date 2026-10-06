@@ -1,10 +1,10 @@
 # Guia da Viagem ao Japão 🗾
 
-PWA de bolso para a viagem da família a Tóquio. Funciona offline, é instalável no celular e tem: contagem regressiva, roteiro por dia, guia de locais com história e dicas, conversor de iene ⇄ real, frases úteis (com áudio em japonês), hotéis, informações práticas e cartão de emergência.
+PWA de bolso para a viagem da família ao Japão. Funciona offline, é instalável no celular e tem: contagem regressiva, roteiro por dia, guia de locais com histórias, fotos e curiosidades, conversor de iene ⇄ real, frases úteis (com áudio em japonês), hotéis, informações práticas e cartão de emergência.
 
 ## Como editar o conteúdo
 
-Todo o conteúdo fica em **`content.json`** — não precisa mexer em código. Edite os textos (roteiro, locais, hotéis, frases, emergência), salve e dê push na `main`. O GitHub Pages publica automaticamente.
+O conteúdo principal fica em **`content.json`** e as curiosidades, detalhes extras e créditos das fotos ficam em **`location-extras.json`**. Edite os arquivos, salve e dê push na `main`; o GitHub Pages publica automaticamente.
 
 ## Rodar localmente
 
@@ -24,7 +24,9 @@ Settings → Pages → Source: branch `main`, pasta `/ (root)`. Cada push na `ma
 ## Estrutura
 
 - `index.html` — o app inteiro (HTML + CSS + JS).
-- `content.json` — conteúdo editável.
+- `content.json` — roteiro, locais e demais conteúdos editáveis.
+- `location-extras.json` — curiosidades, detalhes complementares e créditos/licenças das fotos dos locais.
+- `img/locations/` — fotos otimizadas para o guia.
 - `sw.js` — service worker (offline).
 - `manifest.webmanifest` / `icon.svg` — instalação como app.
 

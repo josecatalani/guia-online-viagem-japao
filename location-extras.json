@@ -1,0 +1,217 @@
+{
+  "Templo Sensō-ji": {
+    "photo": { "src": "./img/locations/01.jpg", "title": "Senso-Ji Temple, Tokyo. 淺草寺，東京", "creator": "taijan.huang", "creatorUrl": "https://www.flickr.com/photos/123407889@N03", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/123407889@N03/21702529434" },
+    "context": "Sensō-ji é um templo budista dedicado a Kannon, figura da compaixão. O percurso tradicional começa no Kaminarimon, segue pela Nakamise e termina no salão principal e no pagode de cinco andares.",
+    "curiosities": ["A grande lanterna do Kaminarimon pesa cerca de 700 kg e é substituída periodicamente.", "O templo recebe milhões de visitantes ao longo do ano e fica especialmente cheio no Ano-Novo japonês."]
+  },
+  "Tokyo Skytree": {
+    "photo": { "src": "./img/locations/02.jpg", "title": "View from Tokyo Skytree", "creator": "Kinchan1", "creatorUrl": "https://www.flickr.com/photos/43515091@N08", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/43515091@N08/8666784025" },
+    "context": "A torre foi projetada para continuar transmitindo sinais de televisão em uma cidade com muitos prédios altos. O complexo aos seus pés, Tokyo Solamachi, reúne lojas, restaurantes e atrações familiares.",
+    "curiosities": ["634 metros pode ser lido como 'mu-sa-shi', uma referência sonora à antiga província de Musashi, onde fica Tóquio.", "A estrutura combina uma base triangular com uma forma circular que se transforma gradualmente à medida que sobe."]
+  },
+  "Cruzamento de Shibuya": {
+    "photo": { "src": "./img/locations/03.jpg", "title": "Shibuya Scramble Crossing, Tokyo, 23 June 2023", "creator": "PEPSI697", "creatorUrl": "https://commons.wikimedia.org/wiki/User:PEPSI697", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "source": "https://commons.wikimedia.org/w/index.php?curid=148977043" },
+    "context": "O cruzamento fica diante da saída Hachikō da estação, um dos pontos de encontro mais conhecidos da cidade. À noite, os letreiros e telões fazem parte da paisagem luminosa de Shibuya.",
+    "curiosities": ["Em cada ciclo do semáforo, pedestres atravessam simultaneamente em várias direções, inclusive na diagonal.", "A estátua de Hachikō homenageia o cão que ficou conhecido por esperar seu tutor na estação; a primeira estátua foi instalada em 1934."]
+  },
+  "Takeshita Street": {
+    "photo": { "src": "./img/locations/04.jpg", "title": "Takeshita Street, Harajuku, Tokyo", "creator": "Ahia", "creatorUrl": "https://www.flickr.com/photos/22995629@N00", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/22995629@N00/7076776849" },
+    "context": "Takeshita Street é uma vitrine compacta da moda de Harajuku: lojas de roupas, acessórios, doces e lembranças se alinham numa rua curta entre a estação Harajuku e a avenida Meiji-dōri.",
+    "curiosities": ["Os crepes enrolados vendidos em Harajuku viraram um lanche-símbolo do bairro e costumam ser montados na hora.", "A moda de rua de Harajuku inspirou artistas, revistas e estilos juvenis dentro e fora do Japão."]
+  },
+  "Parque Yoyogi": {
+    "photo": { "src": "./img/locations/05.jpg", "title": "The Tokyo Roackabilly Club in Yoyogi Park, Tokyo", "creator": "fakelvis", "creatorUrl": "https://www.flickr.com/photos/40933543@N00", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "source": "https://www.flickr.com/photos/40933543@N00/4098994950" },
+    "context": "O parque tem gramados amplos, bosques e caminhos para caminhar. Ele fica ao lado do santuário Meiji e é um contraste tranquilo com as ruas movimentadas de Harajuku e Shibuya.",
+    "curiosities": ["Antes de virar parque público, a área abrigou a Vila Olímpica dos Jogos de Tóquio de 1964.", "Em muitos domingos, grupos se reúnem para dançar, tocar música ou fazer piqueniques; os encontros variam de semana para semana."]
+  },
+  "Fushimi Inari Taisha": {
+    "photo": { "src": "./img/locations/06.jpg", "title": "Fushimi Inari-taisha, Kyoto", "creator": "Dimitry B", "creatorUrl": "https://www.flickr.com/photos/61533954@N00", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/61533954@N00/33775913145" },
+    "context": "O santuário principal fica na base do Monte Inari, mas os caminhos e portais continuam montanha acima, passando por pequenos santuários, mirantes e trechos de floresta.",
+    "curiosities": ["Os portais vermelhos são doações: muitos trazem no verso o nome de uma pessoa ou empresa e a data da oferta.", "As raposas de pedra são mensageiras de Inari; algumas aparecem com uma chave ou um rolo de arroz na boca."]
+  },
+  "Rua comercial Nakamise": {
+    "photo": { "src": "./img/locations/07.jpg", "title": "Nakamise Shopping Street - Tokyo", "creator": "IQRemix", "creatorUrl": "https://www.flickr.com/photos/46021126@N00", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "source": "https://www.flickr.com/photos/46021126@N00/18125769508" },
+    "context": "A Nakamise liga o Kaminarimon ao portão Hōzōmon do Sensō-ji. As fachadas e toldos formam uma passagem comercial movimentada, com doces, artesanato e lembranças de Asakusa.",
+    "curiosities": ["A rua tem aproximadamente 250 metros e cerca de 90 lojas, embora o número possa variar.", "Alguns doces tradicionais, como ningyō-yaki, são preparados em moldes com formas de figuras e símbolos japoneses."]
+  },
+  "Templo Sōgenji (Kappa-dera)": {
+    "photo": { "src": "./img/locations/08.jpg", "title": "Kappa Dera @ Sougen-ji Temple @ Asakusa", "creator": "*_*", "creatorUrl": "https://www.flickr.com/photos/22539273@N00", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/22539273@N00/13824502223" },
+    "context": "Sōgenji é um templo pequeno e residencial, conhecido localmente como Kappa-dera. As histórias sobre kappa fazem parte do folclore japonês e aparecem em livros, brinquedos e festivais da região de Asakusa.",
+    "curiosities": ["O kappa é descrito nas lendas como uma criatura aquática com uma cavidade no topo da cabeça, que deve permanecer cheia de água.", "Uma saudação respeitosa é curvar-se: nas histórias, o kappa retribui a reverência e pode derramar a água da cabeça."]
+  },
+  "Parque Ueno": {
+    "photo": { "src": "./img/locations/09.jpg", "title": "Autumn Leaf Color in Garden (Ueno Park, Tokyo, Japan)", "creator": "t-mizo", "creatorUrl": "https://www.flickr.com/photos/47626742@N07", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/47626742@N07/6404325303" },
+    "context": "O parque combina caminhos arborizados com museus importantes, o lago Shinobazu e o zoológico. É fácil passar um dia inteiro por ali, então vale escolher as atrações antes de chegar.",
+    "curiosities": ["O Museu Nacional de Tóquio, dentro do parque, é o museu mais antigo do Japão.", "Na primavera, grupos fazem hanami — piqueniques para apreciar as cerejeiras — sob as árvores em flor."]
+  },
+  "Nikkō": {
+    "photo": { "src": "./img/locations/10.jpg", "title": "Nikko - Toshogu Shrine", "creator": "roger4336", "creatorUrl": "https://www.flickr.com/photos/24736216@N07", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "source": "https://www.flickr.com/photos/24736216@N07/3424899518" },
+    "context": "A área histórica reúne o santuário Tōshō-gū, o templo Rinnō-ji e o santuário Futarasan. Fora do centro, Nikkō também é conhecida pelas montanhas, pelo lago Chūzenji e pela cachoeira Kegon.",
+    "curiosities": ["No estábulo sagrado de Tōshō-gū há um entalhe dos três macacos: 'não ver, não ouvir e não falar o mal'.", "A expressão japonesa 'Nikkō wo minai uchi wa kekkō to iu na' brinca que não se deve dizer 'magnífico' antes de ver Nikkō."]
+  },
+  "Kiyomizu-dera": {
+    "photo": { "src": "./img/locations/11.jpg", "title": "Kiyomizu-dera, Kyoto, November 2016 -02", "creator": "Martin Falbisoner", "creatorUrl": "https://commons.wikimedia.org/wiki/User:Martin_Falbisoner", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "source": "https://commons.wikimedia.org/w/index.php?curid=53593908" },
+    "context": "O salão principal avança sobre uma encosta apoiado por uma estrutura de madeira. A vista do terraço muda com as estações, especialmente durante a floração das cerejeiras e as cores do outono.",
+    "curiosities": ["A expressão 'saltar do palco de Kiyomizu' significa tomar uma decisão ousada; surgiu da antiga tradição de fazer promessas diante de Kannon.", "O nome Kiyomizu significa 'água pura' e se refere à cascata Otowa, cujos filetes de água são associados a diferentes bênçãos."]
+  },
+  "Ninenzaka": {
+    "photo": { "src": "./img/locations/12.jpg", "title": "Ninenzaka-kyoto", "creator": "Aporon999", "creatorUrl": "https://commons.wikimedia.org/wiki/w/index.php?title=User:Aporon999&action=edit&redlink=1", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/", "source": "https://commons.wikimedia.org/w/index.php?curid=26005442" },
+    "context": "Ninenzaka é parte do conjunto de ruas históricas de Higashiyama. A inclinação e o calçamento de pedra ajudam a compor a paisagem tradicional entre o centro de Quioto e o Kiyomizu-dera.",
+    "curiosities": ["O nome costuma ser traduzido como 'ladeira de dois anos'; a origem exata do nome é explicada por diferentes tradições locais.", "A região é protegida por regras de preservação urbana que limitam mudanças na aparência das fachadas históricas."]
+  },
+  "Sannenzaka": {
+    "photo": { "src": "./img/locations/13.jpg", "title": "Sannenzaka-kyoto", "creator": "Aporon999", "creatorUrl": "https://commons.wikimedia.org/wiki/w/index.php?title=User:Aporon999&action=edit&redlink=1", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/", "source": "https://commons.wikimedia.org/w/index.php?curid=26005701" },
+    "context": "Sannenzaka também é chamada Sanneizaka e faz parte do caminho de pedestres em Higashiyama. A subida é cercada por casas de chá, lojas e ruas menores que levam a templos próximos.",
+    "curiosities": ["Sanneizaka pode ser interpretado como 'ladeira da visita a Kiyomizu', em referência ao templo Kiyomizu-dera.", "Ninenzaka e Sannenzaka são cenários recorrentes em filmes, fotografias e cartões-postais de Quioto."]
+  },
+  "Santuário Yasaka": {
+    "photo": { "src": "./img/locations/14.jpg", "title": "Yasaka Shrine Kyoto", "creator": "Estorgik", "creatorUrl": "https://commons.wikimedia.org/w/index.php?title=User:Estorgik&action=edit&redlink=1", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "source": "https://commons.wikimedia.org/w/index.php?curid=92934582" },
+    "context": "O Yasaka fica no encontro de Gion, Higashiyama e do Parque Maruyama. O recinto pode ser visitado a qualquer hora, mas salões e serviços específicos seguem horários próprios.",
+    "curiosities": ["O Gion Matsuri, ligado ao santuário, acontece em julho e inclui grandes carros alegóricos chamados yamahoko.", "As lanternas do salão principal costumam trazer os nomes de estabelecimentos que apoiam o santuário e o festival."]
+  },
+  "Rio Kamo (Kamogawa)": {
+    "photo": { "src": "./img/locations/15.jpg", "title": "kamogawa river kyoto japan. 鴨川 京都", "creator": "moollyem", "creatorUrl": "https://www.flickr.com/photos/43515977@N06", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/43515977@N06/28140468732" },
+    "context": "As margens do Kamo atravessam bairros centrais e têm degraus largos que servem de lugar para sentar. Pontes como Sanjō e Shijō conectam áreas movimentadas de ambos os lados do rio.",
+    "curiosities": ["Nos meses quentes, alguns restaurantes montam plataformas temporárias sobre o rio, tradição conhecida como kawadoko.", "As pedras em forma de tartaruga e de ave na altura do delta ajudam pedestres a atravessar o curso raso do rio."]
+  },
+  "Kinkaku-ji (Templo do Pavilhão Dourado)": {
+    "photo": { "src": "./img/locations/16.jpg", "title": "Kinkaku-ji, Kyoto, Japan, 2004", "creator": "picture by User:Ellywa", "creatorUrl": "https://commons.wikimedia.org/wiki/User:Ellywa", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/", "source": "https://commons.wikimedia.org/w/index.php?curid=299" },
+    "context": "O pavilhão tem três andares com estilos arquitetônicos diferentes e fica à beira do lago Kyōko-chi. A visita é feita por um percurso definido ao redor do jardim, sem acesso ao interior do edifício.",
+    "curiosities": ["O nome oficial do templo é Rokuon-ji; Kinkaku é o apelido do pavilhão coberto de folhas de ouro.", "No topo há uma fênix dourada, ave mitológica associada à renovação e à prosperidade."]
+  },
+  "Gion": {
+    "photo": { "src": "./img/locations/17.jpg", "title": "Geishas in Gion Kyoto", "creator": "Bermi Ferrer", "creatorUrl": "https://www.flickr.com/photos/24532597@N04", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/24532597@N04/4078775757" },
+    "context": "Gion é um bairro para caminhar devagar: além da Hanamikoji, há vielas, casas de chá e o canal Shirakawa. Geiko e maiko são profissionais das artes tradicionais, não personagens para fotografar sem permissão.",
+    "curiosities": ["Em Quioto, 'geiko' é o termo local para uma artista profissional de entretenimento tradicional; 'maiko' é uma aprendiz.", "O bairro ganhou importância com hospedarias e casas de chá que atendiam peregrinos a caminho do santuário Yasaka."]
+  },
+  "Nara": {
+    "photo": { "src": "./img/locations/18.jpg", "title": "Sika Deer, Nara Park, Japan", "creator": ". Ray in Manila", "creatorUrl": "https://www.flickr.com/photos/21186555@N07", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/21186555@N07/51422853501" },
+    "context": "A antiga capital é compacta o suficiente para explorar a pé entre a estação, o parque, o Tōdai-ji e o santuário Kasuga Taisha. Os cervos circulam livremente, mas continuam sendo animais selvagens.",
+    "curiosities": ["Os cervos de Nara são considerados mensageiros sagrados de Kasuga Taisha em uma tradição local antiga.", "Alguns aprenderam a inclinar a cabeça diante de visitantes que seguram os biscoitos próprios para cervos — shika senbei."]
+  },
+  "Otagi Nenbutsu-ji": {
+    "photo": { "src": "./img/locations/19.jpg", "title": "Otagi Nenbutsuji, Kyoto", "creator": "lamblukas", "creatorUrl": "https://www.flickr.com/photos/29043563@N00", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/29043563@N00/53390263548" },
+    "context": "O templo está numa área tranquila de Saga-Toriimoto, mais distante da estação central de Arashiyama. Reserve tempo para observar as esculturas de pedra espalhadas pelo terreno e o pequeno portão de entrada.",
+    "curiosities": ["As figuras representam rakan, discípulos de Buda que alcançaram a iluminação.", "Muitas esculturas foram feitas por pessoas comuns que participaram de oficinas; por isso, cada rosto tem expressão e detalhes próprios."]
+  },
+  "Adashino Nenbutsuji": {
+    "photo": { "src": "./img/locations/20.jpg", "title": "DP2M3857", "creator": "bethom33", "creatorUrl": "https://www.flickr.com/photos/92475647@N05", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "source": "https://www.flickr.com/photos/92475647@N05/32990020606" },
+    "context": "O templo fica em Saga-Toriimoto, no sopé das colinas de Arashiyama. O recinto é um memorial e um lugar de oração, não apenas um jardim de esculturas; a visita pede uma atitude respeitosa.",
+    "curiosities": ["As imagens de pedra lembram as pessoas que foram deixadas para trás sem cerimônias funerárias na antiga área de Adashino.", "Uma pequena alameda de bambu dentro do terreno oferece uma alternativa mais sossegada à famosa floresta de bambu de Arashiyama."]
+  },
+  "Gio-ji": {
+    "photo": { "src": "./img/locations/21.jpg", "title": "Gio-ji, Moss Garden -1 (October 2011)", "creator": "Tetsuhiro Terada", "creatorUrl": "https://www.flickr.com/photos/95330854@N06", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/95330854@N06/25194064025" },
+    "context": "O jardim é pequeno e sombreado, com musgo, árvores e uma janela circular no salão principal. A aparência muda bastante com chuva e estação, o que torna o local especialmente fotogênico em dias úmidos.",
+    "curiosities": ["A janela redonda chamada Yoshino-mado enquadra o jardim como se fosse uma pintura viva.", "A história de Gio e Hotoke, ligadas ao templo, é narrada no 'Conto dos Heike', obra clássica sobre a ascensão e queda do clã Taira."]
+  },
+  "Seiryō-ji": {
+    "photo": { "src": "./img/locations/22.jpg", "title": "Seiryoji temple", "creator": "KimonBerlin", "creatorUrl": "https://www.flickr.com/photos/81943113@N00", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "source": "https://www.flickr.com/photos/81943113@N00/8279749910" },
+    "context": "Conhecido também como Saga Shakadō, Seiryō-ji fica perto das antigas ruas de Saga-Toriimoto. O salão principal guarda uma imagem de Shaka que ocupa lugar importante na história religiosa de Quioto.",
+    "curiosities": ["A imagem principal é tradicionalmente associada a uma escultura trazida da China pelo monge Chōnen no século X.", "O templo preserva um conjunto de estátuas budistas de diferentes períodos, algumas acessíveis em áreas de exposição mediante ingresso."]
+  },
+  "Ponte Togetsukyō": {
+    "photo": { "src": "./img/locations/23.jpg", "title": "Togetsu-kyo (Moon Crossing) Bridge, Arahimaya", "creator": "Ray in Manila", "creatorUrl": "https://www.flickr.com/photos/21186555@N07", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/21186555@N07/39889725892" },
+    "context": "A ponte atravessa o rio Ōi, chamado Katsura mais adiante. A paisagem aberta permite ver as montanhas de Arashiyama e barcos de passeio, além de conectar a estação à área dos templos.",
+    "curiosities": ["Togetsukyō quer dizer 'ponte que cruza a lua'; o nome é ligado a uma observação do imperador Kameyama numa noite de lua cheia.", "A ponte atual tem aparência tradicional, mas sua estrutura é moderna e foi reconstruída no século XX."]
+  },
+  "Floresta de Bambu de Arashiyama": {
+    "photo": { "src": "./img/locations/24.jpg", "title": "Arashiyama Bamboo Forest Kyoto", "creator": "roan.retera", "creatorUrl": "https://www.flickr.com/photos/147881710@N02", "license": "CC0 1.0", "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/", "source": "https://www.flickr.com/photos/147881710@N02/32663187511" },
+    "context": "A passagem de bambu fica entre o templo Tenryū-ji e a área de Ōkōchi Sansō. É um caminho público curto; para explorar com calma, combine a caminhada com jardins e templos da vizinhança.",
+    "curiosities": ["O som do bambu balançando ao vento foi escolhido pelo Ministério do Meio Ambiente como uma das paisagens sonoras do Japão.", "O bambu pode crescer muito rapidamente em condições favoráveis, por isso os colmos são cortados e manejados para manter a passagem aberta."]
+  },
+  "Dōtonbori": {
+    "photo": { "src": "./img/locations/25.jpg", "title": "DoTonBori - Osaka's busiest street.", "creator": "MIKI Yoshihito. (#mikiyoshihito)", "creatorUrl": "https://www.flickr.com/photos/7940758@N07", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/7940758@N07/8978239044" },
+    "context": "O canal e as ruas ao redor formam uma das áreas noturnas mais movimentadas de Osaka. A caminhada entre as pontes Ebisubashi e Dōtonbori é curta, mas há muitas fachadas, restaurantes e pequenas vielas para descobrir.",
+    "curiosities": ["O famoso corredor de corrida da Glico está na fachada de uma loja junto à ponte Ebisubashi; a imagem luminosa existe desde 1935, embora tenha sido renovada várias vezes.", "A cidade costuma ser chamada de 'kuidaore', expressão associada à ideia de comer até gastar — uma brincadeira com a fama gastronômica de Osaka."]
+  },
+  "Mercado Kuromon": {
+    "photo": { "src": "./img/locations/26.jpg", "title": "Seafood Extravaganza in Kuromon Market", "creator": "Stephen Kelly Photography", "creatorUrl": "https://www.flickr.com/photos/67056263@N04", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/67056263@N04/26270251024" },
+    "context": "Kuromon é um mercado coberto com barracas de frutos do mar, frutas, carnes e pratos prontos. É uma boa parada para provar pequenas porções, mas vale observar os preços e as regras de consumo de cada loja.",
+    "curiosities": ["O apelido 'cozinha de Osaka' vem do papel do mercado no abastecimento de restaurantes e cozinhas profissionais da cidade.", "O nome Kuromon significa 'portão negro' e está ligado a um antigo portão próximo ao templo Enmyōji."]
+  },
+  "Santuário Namba Yasaka": {
+    "photo": { "src": "./img/locations/27.jpg", "title": "Namba Yasaka Shrine, Osaka", "creator": "Sergiy Galyonkin", "creatorUrl": "https://www.flickr.com/photos/22974618@N00", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "source": "https://www.flickr.com/photos/22974618@N00/53850011370" },
+    "context": "O santuário fica numa área urbana de Namba. A grande construção de cabeça de leão é um palco ritual; o recinto é menor e mais silencioso do que a movimentada zona comercial ao redor.",
+    "curiosities": ["O leão gigante tem aproximadamente 12 metros de altura e sua boca aberta é associada a afastar o azar e atrair sorte.", "O palco recebe apresentações durante festivais e cerimônias, e não é apenas uma escultura decorativa."]
+  },
+  "Castelo de Osaka": {
+    "photo": { "src": "./img/locations/28.jpg", "title": "Ozakajō Osaka castle", "creator": "JoopDorresteijn", "creatorUrl": "https://www.flickr.com/photos/10073573@N00", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/10073573@N00/3161124065" },
+    "context": "O parque do castelo ocupa uma área extensa cercada por fossos e muralhas de pedra. A torre principal atual funciona como museu, enquanto as muralhas e portões preservam partes de diferentes fases da fortificação.",
+    "curiosities": ["Alguns blocos de pedra das muralhas são enormes e foram transportados de regiões distantes por antigos senhores feudais.", "O castelo foi reconstruído várias vezes; a torre atual foi financiada por doações públicas e inaugurada em 1931."]
+  },
+  "Shitennō-ji": {
+    "photo": { "src": "./img/locations/29.jpg", "title": "Shitennoji", "creator": "mith17", "creatorUrl": "https://www.flickr.com/photos/53339478@N06", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/53339478@N06/6213256443" },
+    "context": "O templo segue um eixo tradicional: portão, pagode, salão principal e sala de leitura se alinham numa sequência. Partes do complexo são reconstruções, mas o desenho remete a modelos antigos de templos japoneses.",
+    "curiosities": ["O nome significa 'Templo dos Quatro Reis Celestiais', divindades protetoras do budismo.", "O mercado de pulgas realizado no terreno em datas específicas atrai moradores e visitantes; confirme o calendário antes de ir."]
+  },
+  "Shinsekai": {
+    "photo": { "src": "./img/locations/30.jpg", "title": "Shinsekai, Osaka", "creator": "Petr Meissner", "creatorUrl": "https://www.flickr.com/photos/21147679@N08", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/21147679@N08/10786579944" },
+    "context": "Shinsekai significa 'Novo Mundo'. O bairro conserva letreiros retrô, restaurantes populares e uma atmosfera diferente dos centros comerciais mais modernos de Osaka.",
+    "curiosities": ["O desenvolvimento original do bairro, no começo do século XX, tomou Paris e Coney Island como referências de lazer e modernidade.", "A torre Tsūtenkaku e a estátua de Billiken são dois símbolos da região."]
+  },
+  "Tsūtenkaku": {
+    "photo": { "src": "./img/locations/31.jpg", "title": "Shinsekai and the Tsutenkaku Tower - Osaka, Japan", "creator": "andrew.ballantine", "creatorUrl": "https://www.flickr.com/photos/193619644@N05", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/193619644@N05/51363072219" },
+    "context": "A torre atual foi construída depois da demolição da primeira Tsūtenkaku. Seus mirantes mostram o bairro de Shinsekai e, em dias claros, partes amplas de Osaka.",
+    "curiosities": ["Tsūtenkaku pode ser traduzido como 'torre que alcança o céu'.", "A estátua de Billiken, personagem criado nos Estados Unidos e adotado como amuleto local, fica na torre e é associada à boa sorte."]
+  },
+  "Memorial da Paz de Hiroshima (Cúpula da Bomba Atômica)": {
+    "photo": { "src": "./img/locations/32.jpg", "title": "Hiroshima Peace Memorial (Genbaku Dome)", "creator": "Clay Gilliland", "creatorUrl": "https://www.flickr.com/photos/26781577@N07", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "source": "https://www.flickr.com/photos/26781577@N07/14950733208" },
+    "context": "A cúpula está preservada como estava após a explosão, com intervenções estruturais para evitar seu desabamento. O melhor é observá-la das áreas públicas e combinar a visita com o parque e o museu.",
+    "curiosities": ["A bomba explodiu a pouca distância na horizontal, mas quase diretamente acima do edifício; isso contribuiu para que parte da estrutura permanecesse de pé.", "O edifício foi inscrito como Patrimônio Mundial da UNESCO em 1996 como testemunho dos efeitos da guerra nuclear."]
+  },
+  "Cenotáfio das Vítimas da Bomba Atômica": {
+    "photo": { "src": "./img/locations/33.jpg", "title": "hiroshima peace park", "creator": "kmf164", "creatorUrl": "https://www.flickr.com/photos/10293570@N00", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "source": "https://www.flickr.com/photos/10293570@N00/962646123" },
+    "context": "O cenotáfio fica no eixo central do parque e guarda um registro dos nomes conhecidos das vítimas. A forma arqueada do monumento foi pensada como abrigo simbólico para as almas.",
+    "curiosities": ["A inscrição em japonês expressa o desejo de que as vítimas descansem em paz e de que o erro não se repita.", "O registro de nomes pode ser atualizado quando novas vítimas são reconhecidas pelas autoridades e famílias."]
+  },
+  "Chama da Paz de Hiroshima": {
+    "photo": { "src": "./img/locations/34.jpg", "title": "Peace Flame", "creator": "kvn.jns", "creatorUrl": "https://www.flickr.com/photos/18519136@N00", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/18519136@N00/3625779926" },
+    "context": "A chama está no eixo visual entre o cenotáfio e a Cúpula da Bomba Atômica. Ela integra o percurso de memória do parque e costuma ser visitada em silêncio.",
+    "curiosities": ["A chama foi acesa em 1964 e sua forma lembra duas mãos unidas pelos pulsos, abertas para o céu.", "A intenção declarada é mantê-la acesa até que as armas nucleares deixem de existir no mundo."]
+  },
+  "Parque Memorial da Paz de Hiroshima": {
+    "photo": { "src": "./img/locations/35.jpg", "title": "Peace Memorial Arch, Hiroshima", "creator": "Ruth and Dave", "creatorUrl": "https://www.flickr.com/photos/95142644@N00", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/95142644@N00/406993757" },
+    "context": "O parque reúne memoriais, o Museu Memorial da Paz e espaços de reflexão junto ao rio. Reserve tempo para caminhar entre os pontos e para a visita ao museu, que apresenta relatos e objetos de sobreviventes.",
+    "curiosities": ["O parque ocupa o antigo distrito de Nakajima, que foi quase completamente destruído pela explosão de 1945.", "O Museu Memorial da Paz foi inaugurado em 1955; a exposição foi renovada ao longo do tempo para apresentar histórias pessoais e consequências duradouras da bomba."]
+  },
+  "Hondōri": {
+    "photo": { "src": "./img/locations/36.jpg", "title": "hiroshima hondori after a-bomb", "creator": "kmf164", "creatorUrl": "https://www.flickr.com/photos/10293570@N00", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "source": "https://www.flickr.com/photos/10293570@N00/964380340" },
+    "context": "Hondōri é uma arcada coberta de lojas no centro comercial de Hiroshima. Ela liga áreas de compras, cafés e restaurantes e fica a uma caminhada do Parque Memorial da Paz.",
+    "curiosities": ["O nome significa literalmente 'rua principal'.", "A arcada é coberta por um teto de vidro e metal, então continua sendo uma rota movimentada mesmo em dias de chuva."]
+  },
+  "Santuário de Itsukushima": {
+    "photo": { "src": "./img/locations/37.jpg", "title": "Itsukushima Shrine, Miyajima Island", "creator": "Mustang Joe", "creatorUrl": "https://www.flickr.com/photos/63234672@N04", "license": "CC0 1.0", "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/", "source": "https://www.flickr.com/photos/63234672@N04/14649369669" },
+    "context": "O santuário e seus corredores de madeira acompanham a linha da enseada. A paisagem muda com a maré: na água alta parece flutuar; na baixa, bancos de areia e lodo ficam expostos.",
+    "curiosities": ["Miyajima significa 'ilha do santuário'; o nome oficial da ilha é Itsukushima.", "O conjunto do santuário é Patrimônio Mundial da UNESCO e combina arquitetura, maré e paisagem natural numa única vista."]
+  },
+  "Grande torii de Miyajima (Otorii)": {
+    "photo": { "src": "./img/locations/38.jpg", "title": "O-Torii at low tide", "creator": "Ruth and Dave", "creatorUrl": "https://www.flickr.com/photos/95142644@N00", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/95142644@N00/407470270" },
+    "context": "O portão marca simbolicamente a passagem do mundo cotidiano para o espaço sagrado da ilha. A maré determina se ele parece estar no mar ou se é possível caminhar até sua base.",
+    "curiosities": ["O torii atual tem cerca de 16 metros de altura e se mantém principalmente pelo próprio peso, sem pilares fincados no fundo do mar.", "A madeira principal é de cânfora, escolhida por sua resistência natural e durabilidade."]
+  },
+  "Teleférico de Miyajima (Miyajima Ropeway)": {
+    "photo": { "src": "./img/locations/39.jpg", "title": "Miyajima Ropeway", "creator": "redlegsfan21", "creatorUrl": "https://www.flickr.com/photos/42603028@N05", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "source": "https://www.flickr.com/photos/42603028@N05/13890461069" },
+    "context": "O percurso combina gôndolas pequenas e uma cabine maior até a estação Shishiiwa. Dali, o cume do Monte Misen ainda exige uma caminhada de subida, então planeje água e tempo de retorno.",
+    "curiosities": ["Em dias limpos, os mirantes mostram ilhas do Mar Interior de Seto espalhadas pelo horizonte.", "O Monte Misen é associado a lendas budistas e a locais de culto ligados ao monge Kūkai."]
+  },
+  "Lago Kawaguchi": {
+    "photo": { "src": "./img/locations/40.jpg", "title": "Lake Kawaguchi", "creator": "decade_null", "creatorUrl": "https://www.flickr.com/photos/39952962@N00", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/39952962@N00/13542804913" },
+    "context": "Kawaguchiko tem mirantes, trilhas leves, barcos e banhos termais. A margem norte costuma oferecer boas composições com o Fuji, enquanto a margem sul facilita o acesso a lojas e transporte.",
+    "curiosities": ["O lago é um dos cinco lagos formados ao redor do Fuji por antigas erupções vulcânicas.", "O nível da água e o vento mudam o reflexo da montanha, por isso o Fuji pode aparecer espelhado num momento e desaparecer no seguinte."]
+  },
+  "Monte Fuji": {
+    "photo": { "src": "./img/locations/41.jpg", "title": "Mount Fuji", "creator": "skyseeker", "creatorUrl": "https://www.flickr.com/photos/40422902@N00", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/40422902@N00/11078938913" },
+    "context": "O Fuji pode ser visto de várias cidades e lagos, mas a visibilidade depende do tempo. A montanha é um vulcão ativo monitorado por especialistas; não é permitido iniciar a escalada fora das rotas e períodos autorizados.",
+    "curiosities": ["A última grande erupção começou em 1707 e é conhecida como erupção Hōei.", "O Fuji é frequentemente retratado com neve no topo, mas no verão a neve pode desaparecer quase por completo."]
+  },
+  "Oshino Hakkai": {
+    "photo": { "src": "./img/locations/42.jpg", "remote": "https://upload.wikimedia.org/wikipedia/commons/2/22/231028_Waku-ike_Oshino_Hakkai_springs_Oshino_Yamanashi_pref_Japan01s3.jpg", "title": "231028 Waku-ike Oshino Hakkai springs Oshino Yamanashi pref Japan01s3", "creator": "663highland", "creatorUrl": "https://ja.wikipedia.org/wiki/user:663highland", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "source": "https://commons.wikimedia.org/w/index.php?curid=145668525" },
+    "context": "O vilarejo fica entre o Lago Yamanaka e o Lago Kawaguchi. As lagoas têm águas transparentes e passarelas de visita; siga os avisos, pois algumas áreas são propriedade privada ou locais de culto.",
+    "curiosities": ["Hakkai significa 'oito mares' e se refere às oito nascentes tradicionais do conjunto.", "A água de degelo do Fuji atravessa camadas de lava e rocha vulcânica antes de ressurgir nas lagoas."]
+  },
+  "Pagode Chūreitō": {
+    "photo": { "src": "./img/locations/43.jpg", "title": "Fuji with Chureito Pagoda", "creator": "reggiepen", "creatorUrl": "https://www.flickr.com/photos/42438962@N05", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://www.flickr.com/photos/42438962@N05/17025277650" },
+    "context": "O pagode fica dentro do Parque Arakurayama Sengen, acima de Fujiyoshida. A vista clássica reúne o pagode, a cidade e o Fuji, mas o enquadramento depende do clima e da estação.",
+    "curiosities": ["O pagode foi erguido em 1963 como memorial aos moradores da região mortos em guerras.", "A famosa vista de primavera exige subir muitos degraus; no outono, as folhas coloridas criam outra paisagem bastante procurada."]
+  }
+}
