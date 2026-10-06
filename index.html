@@ -309,14 +309,15 @@
       days.forEach(function (day) {
         var header = el("header", {}, []);
         header.appendChild(el("div", { text: day.title }));
-        header.appendChild(el("small", { class: "muted", text: fmtDay(day.date) }));
+        header.appendChild(el("small", { class: "muted", text: (day.city ? day.city + " · " : "") + fmtDay(day.date) }));
         var body = el("div", {}, []);
         (day.items || []).forEach(function (it) {
           var row = el("div", { class: "row" }, []);
-          var g = el("div", { class: "grow" }, []);
-          g.appendChild(el("div", { class: "pt", text: it.place }));
-          if (it.time && it.time !== "—") g.appendChild(el("small", { class: "muted", text: it.time }));
-          if (it.note) g.appendChild(el("div", { class: "romaji", text: it.note }));
+           var g = el("div", { class: "grow" }, []);
+           g.appendChild(el("div", { class: "pt", text: it.place }));
+           if (it.time && it.time !== "—") g.appendChild(el("small", { class: "muted", text: it.time }));
+           if (it.travel) g.appendChild(el("div", { class: "romaji", text: "↗ " + it.travel }));
+           if (it.note) g.appendChild(el("div", { class: "romaji", text: it.note }));
           row.appendChild(g);
           body.appendChild(row);
         });
