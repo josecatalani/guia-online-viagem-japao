@@ -1,7 +1,7 @@
 /* Service worker — offline support for o Guia do Japão.
    Estratégia: stale-while-revalidate. Mostra a versão em cache na hora
    e atualiza por baixo dos panos quando houver internet. */
-const CACHE = "guia-japao-v7";
+const CACHE = "guia-japao-v8";
 const ASSETS = [
   "./",
   "./index.html",
@@ -9,6 +9,9 @@ const ASSETS = [
   "./location-extras.json",
   "./manifest.webmanifest",
   "./icon.svg",
+  "./icon-192.png",
+  "./icon-512.png",
+  "./apple-touch-icon.png",
   "./img/plug-type-a.svg",
   "./img/plug-adapter.svg",
   "./img/suica.svg",

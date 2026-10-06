@@ -21,6 +21,10 @@ O servidor usa apenas módulos nativos do Node.js. Para escolher outra porta, us
 
 Settings → Pages → Source: branch `main`, pasta `/ (root)`. Cada push na `main` atualiza o app.
 
+## Instalar no celular
+
+Abra o link publicado usando internet. No Android, use o menu do Chrome → **Instalar app** (ou **Adicionar à tela inicial**). No iPhone, abra no Safari, toque em **Compartilhar** → **Adicionar à Tela de Início**.
+
 ## Estrutura
 
 - `index.html` — o app inteiro (HTML + CSS + JS).
