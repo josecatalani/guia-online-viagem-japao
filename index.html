@@ -48,6 +48,7 @@
       white-space: normal; line-height: 1.2;
     }
     .home-grid .emoji { font-size: 2.4rem; line-height: 1; }
+    .install-btn { width: 100%; margin-top: .9rem; }
 
     /* Local guide */
     .location-form select { margin: .5rem 0 1rem; }
@@ -138,6 +139,7 @@
         <button data-go="practical"><span class="emoji">ℹ️</span>Informações</button>
         <button data-go="emergency" class="contrast"><span class="emoji">🆘</span>Emergência</button>
       </div>
+      <button id="installBtn" class="install-btn secondary outline" type="button">📲 Adicionar à tela inicial</button>
     </section>
 
     <!-- ITINERARY -->
@@ -203,6 +205,14 @@
     <p id="loadError" class="hidden" style="color:#be1e2d">Não foi possível carregar o conteúdo. Verifique sua conexão e recarregue.</p>
   </main>
 
+  <dialog id="installDialog">
+    <article>
+      <header><strong id="installDialogTitle">Adicionar o Guia à tela inicial</strong></header>
+      <p id="installDialogText"></p>
+      <footer><button id="closeInstallDialog" type="button">Entendi</button></footer>
+    </article>
+  </dialog>
+
   <button class="sos" data-go="emergency">🆘 Emergência</button>
 
   <script>
@@ -210,6 +220,7 @@
     "use strict";
 
     var DATA = null;
+    var deferredInstallPrompt = null;
     var rate = 0.038;
     var RATE_KEY = "japao_rate";
     var RATE_DATE_KEY = "japao_rate_date";
@@ -247,12 +258,53 @@
     }
     function currentView() { return (location.hash || "#home").slice(1); }
 
+    /* ---------- PWA installation ---------- */
+    function bindInstall() {
+      var button = $("installBtn");
+      var dialog = $("installDialog");
+      var isInstalled = window.matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+      if (isInstalled) button.classList.add("hidden");
+
+      window.addEventListener("beforeinstallprompt", function (event) {
+        event.preventDefault();
+        deferredInstallPrompt = event;
+        button.textContent = "📲 Instalar app";
+      });
+      window.addEventListener("appinstalled", function () {
+        deferredInstallPrompt = null;
+        button.classList.add("hidden");
+      });
+
+      button.addEventListener("click", function () {
+        if (deferredInstallPrompt) {
+          deferredInstallPrompt.prompt();
+          deferredInstallPrompt.userChoice.then(function (choice) {
+            deferredInstallPrompt = null;
+            if (choice.outcome === "accepted") button.classList.add("hidden");
+          });
+          return;
+        }
+
+        var isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+          (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+        $("installDialogTitle").textContent = "Adicionar o Guia à tela inicial";
+        $("installDialogText").textContent = isAppleMobile
+          ? "No Safari, toque em Compartilhar (quadrado com seta para cima), role as opções e escolha ‘Adicionar à Tela de Início’. Se abriu o link dentro de outro aplicativo, escolha abrir no Safari primeiro."
+          : "No Chrome ou navegador compatível, abra o menu (⋮ ou ⋯) e escolha ‘Instalar app’ ou ‘Adicionar à tela inicial’. Se essa opção não aparecer, abra o link publicado diretamente no navegador e tente novamente.";
+        if (dialog.showModal) dialog.showModal();
+        else alert($("installDialogText").textContent);
+      });
+
+      $("closeInstallDialog").addEventListener("click", function () { dialog.close(); });
+    }
+
     document.addEventListener("click", function (e) {
       var go = e.target.closest("[data-go]");
       if (go) { showView(go.getAttribute("data-go")); }
     });
     $("backBtn").addEventListener("click", function () { showView("home"); });
     window.addEventListener("hashchange", function () { showView(currentView()); });
+    bindInstall();
 
     /* ---------- Speech ---------- */
     function speak(text) {

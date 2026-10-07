@@ -23,7 +23,7 @@ Settings → Pages → Source: branch `main`, pasta `/ (root)`. Cada push na `ma
 
 ## Instalar no celular
 
-Abra o link publicado usando internet. No Android, use o menu do Chrome → **Instalar app** (ou **Adicionar à tela inicial**). No iPhone, abra no Safari, toque em **Compartilhar** → **Adicionar à Tela de Início**.
+Abra o link publicado usando internet e toque em **Adicionar à tela inicial** dentro do guia. No Android, o botão inicia a instalação quando disponível; no iPhone, ele mostra como usar Safari → **Compartilhar** → **Adicionar à Tela de Início**.
 
 ## Estrutura
 
