@@ -17,14 +17,134 @@
   },
   "hotels": [
     {
-      "name": "Hotel (a definir)",
-      "area": "Bairro / região",
-      "checkIn": "2026-10-11",
-      "checkOut": "2026-10-31",
-      "address": "Endereço completo aqui",
+      "name": "Apartamento Airbnb em Honjo — perto de Asakusa e Ryōgoku",
+      "area": "Honjo, Sumida-ku, Tóquio, Japão",
+      "checkIn": "2026-10-12",
+      "checkOut": "2026-10-16",
+      "propertyType": "Apartamento inteiro · anúncio avaliado em 4,86/5",
+      "address": "〒130-0004 Tokyo, Sumida City, Honjo, 1-chōme-8-5 鈴木ビル",
       "phone": "",
-      "mapQuery": "Tokyo Station",
-      "notes": "Edite este item em content.json com o hotel real."
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=35.702579498291016%2C139.79762268066406",
+      "airbnbUrl": "https://www.airbnb.com.br/rooms/1391148551252173496",
+      "amenities": {
+        "bedrooms": null,
+        "beds": 4,
+        "bathrooms": 1,
+        "washer": true,
+        "dryer": null,
+        "hairDryer": true
+      },
+      "details": [
+        "O anúncio informa 39–80 m², Wi-Fi grátis, máquina de lavar e secador de cabelo.",
+        "Asakusa fica a cerca de 12 min a pé e Ryōgoku a cerca de 10 min a pé."
+      ],
+      "notes": "O número de quartos não aparece no anúncio público; ele informa 4 camas e 1 banheiro. O endereço postal foi aproveitado do roteiro enviado. Datas conforme o roteiro; confirme com a reserva."
+    },
+    {
+      "name": "Kyo Machiya Higashiyama Ryu — casa tradicional com jardim",
+      "area": "Higashiyama-ku, Quioto, Japão",
+      "checkIn": "2026-10-16",
+      "checkOut": "2026-10-20",
+      "propertyType": "Casa machiya inteira · anúncio avaliado em 4,96/5",
+      "address": "Higashiyama-ku, Quioto (o Airbnb libera o endereço exato após a reserva)",
+      "phone": "",
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=34.98336120850258%2C135.77003151811607",
+      "airbnbUrl": "https://www.airbnb.com.br/rooms/18935194",
+      "amenities": {
+        "bedrooms": 3,
+        "beds": 6,
+        "bathrooms": 2,
+        "washer": true,
+        "dryer": true,
+        "hairDryer": true
+      },
+      "details": [
+        "Machiya descrita como centenária, renovada em março de 2017; cerca de 95 m² e capacidade anunciada para até 9 pessoas.",
+        "Tem um pequeno jardim, cozinha equipada, Wi-Fi e bicicletas gratuitas (até 5 pessoas).",
+        "A Estação Tōfukuji fica a cerca de 5 min a pé; de lá, a Estação de Quioto fica a uma parada de trem (aprox. 2 min).",
+        "O anúncio exibe registro de hospedagem de Quioto: 京都市指令保保医第1575号."
+      ],
+      "notes": "O Airbnb mostra o bairro, mas não publica o endereço residencial exato antes da reserva. A localização no mapa é aproximada. Datas conforme o roteiro; confirme com a reserva."
+    },
+    {
+      "name": "A Ilha Poética Tsuruhashi A",
+      "area": "Distrito de Higashinari, Osaka, Japão",
+      "checkIn": "2026-10-20",
+      "checkOut": "2026-10-23",
+      "propertyType": "Casa inteira de três andares · anúncio avaliado em 4,95/5",
+      "address": "Distrito de Higashinari, Osaka (o Airbnb libera o endereço exato após a reserva)",
+      "phone": "",
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=34.66609573364258%2C135.53536987304688",
+      "airbnbUrl": "https://www.airbnb.com.br/rooms/39995110",
+      "amenities": {
+        "bedrooms": 4,
+        "beds": 4,
+        "bathrooms": 1.5,
+        "washer": true,
+        "dryer": null,
+        "hairDryer": true
+      },
+      "details": [
+        "Casa independente de três andares com cerca de 110 m²; o anúncio informa 4 quartos, 4 camas e 1,5 banheiros.",
+        "A Estação Tsuruhashi fica a cerca de 5 min a pé, com acesso a Namba, Nara e Umeda.",
+        "O anúncio destaca uma loja de conveniência e fontes termais nas proximidades; há máquina de lavar e secador de cabelo."
+      ],
+      "notes": "A localização mostrada pelo Airbnb é aproximada; o endereço residencial exato é fornecido após a reserva. A secadora de roupas não consta entre as comodidades listadas. Datas conforme o roteiro; confirme com a reserva."
+    },
+    {
+      "name": "HOTEL MYSTAYS Hiroshima Peace Park",
+      "area": "Naka-ku, Hiroshima, Japão",
+      "checkIn": "2026-10-24",
+      "checkOut": "2026-10-26",
+      "propertyType": "Hotel · reserva para 5 adultos em 2 quartos",
+      "address": "3-3-1 Otemachi, Naka-ku, Hiroshima, 730-0051, Japão",
+      "phone": "+81 82-536-2031",
+      "mapLink": "https://www.google.com/maps/place/HOTEL+MYSTAYS+Hiroshima+Peace+Park/@34.3896294,132.4515291,17z/data=!3m2!4b1!5s0x355aa213178d1f95:0x7f78b5930b9b9af3!4m9!3m8!1s0x355aa21318379f1f:0x181578c2420df5!5m2!4m1!1i2!8m2!3d34.389625!4d132.454104!16s%2Fg%2F11q2vxhs_6?entry=ttu&g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D",
+      "bookingUrl": "https://www.booking.com/hotel/jp/mystays-hiroshima-peace-park.html",
+      "amenities": {
+        "bedrooms": null,
+        "roomCount": 2,
+        "guests": 5,
+        "beds": null,
+        "bathrooms": 2,
+        "washer": null,
+        "dryer": null,
+        "hairDryer": true
+      },
+      "details": [
+        "Entrada em 24 de outubro, das 15:00 à meia-noite; saída em 26 de outubro até 11:00.",
+        "Quarto 1: Standard Triplo, não fumante, capacidade máxima de 3 adultos. Quarto 2: Standard Duplo, não fumante, capacidade máxima de 2 adultos.",
+        "Cada quarto tem banheiro privativo e secador de cabelo; itens informados incluem ar-condicionado, bidê, banheira ou chuveiro, toalhas, TV, geladeira e chaleira elétrica.",
+        "Sem refeições incluídas e sem berços ou camas extras. A confirmação informa tarifa não reembolsável e possível imposto municipal pago no local.",
+        "Fica próximo ao Parque Memorial da Paz de Hiroshima."
+      ],
+      "notes": "Não incluí o número de confirmação, PIN nem dados de pagamento da reserva no guia compartilhável."
+    },
+    {
+      "name": "Shinjuku Direct — quarto privativo 2LDK, 72 m²",
+      "area": "Suginami-ku, Tóquio, Japão",
+      "checkIn": "2026-10-26",
+      "checkOut": "2026-10-31",
+      "propertyType": "Quarto privativo em casa · anúncio avaliado em 4,99/5",
+      "address": "1-chōme-4-4 Horinouchi, Suginami-ku, Tóquio, Japão",
+      "phone": "",
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=35.68352127075195%2C139.65574645996094",
+      "airbnbUrl": "https://www.airbnb.com.br/rooms/45413566",
+      "amenities": {
+        "bedrooms": 1,
+        "beds": 5,
+        "bathrooms": 1,
+        "washer": true,
+        "dryer": true,
+        "hairDryer": true
+      },
+      "details": [
+        "O anúncio informa 72 m² e descreve a acomodação como quarto privativo em casa, com banheiro privativo; não é a casa inteira.",
+        "Fica a cerca de 2 min a pé da Estação Hōnanchō, na Linha Marunouchi, com acesso direto a Shinjuku.",
+        "Acesso ao quarto de hóspedes no terceiro andar por escada própria, sem atravessar as áreas internas usadas pelos anfitriões.",
+        "Máquina de lavar e secadora gratuitas, além de secador de cabelo."
+      ],
+      "notes": "O título destaca '2LDK', mas a classificação pública do Airbnb é quarto privativo em casa; confirme com o anfitrião quais áreas são compartilhadas. O endereço foi aproveitado do roteiro enviado. Datas conforme o roteiro; confirme com a reserva."
     }
   ],
   "itinerary": [

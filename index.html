@@ -572,10 +572,46 @@
         if (h.area) header.appendChild(el("small", { class: "muted", text: h.area }));
         var body = el("div", {}, []);
         if (h.checkIn || h.checkOut) body.appendChild(el("p", { text: "Entrada: " + (h.checkIn ? fmtDay(h.checkIn) : "?") + " · Saída: " + (h.checkOut ? fmtDay(h.checkOut) : "?") }));
+        if (h.propertyType) body.appendChild(el("p", { class: "muted", text: h.propertyType }));
         if (h.address) body.appendChild(el("p", { text: h.address }));
+        if (h.airbnbUrl) {
+          var booking = el("p", {}, []);
+          booking.appendChild(el("a", { href: h.airbnbUrl, target: "_blank", rel: "noopener", text: "🏠 Ver anúncio no Airbnb" }));
+          body.appendChild(booking);
+        }
+        if (h.bookingUrl) {
+          var hotelLink = el("p", {}, []);
+          hotelLink.appendChild(el("a", { href: h.bookingUrl, target: "_blank", rel: "noopener", text: "🏨 Ver hotel no Booking.com" }));
+          body.appendChild(hotelLink);
+        }
+        if (h.amenities) {
+          var amenities = el("ul", {}, []);
+          [
+            ["Quartos", h.amenities.bedrooms == null ? "Não informado no anúncio" : h.amenities.bedrooms],
+            ["Quartos reservados", h.amenities.roomCount],
+            ["Hóspedes", h.amenities.guests],
+            ["Camas", h.amenities.beds],
+            ["Banheiros", h.amenities.bathrooms],
+            ["Máquina de lavar", h.amenities.washer == null ? "Não informado" : (h.amenities.washer ? "Sim" : "Não")],
+            ["Secadora de roupas", h.amenities.dryer == null ? "Não informado" : (h.amenities.dryer ? "Sim" : "Não")],
+            ["Secador de cabelo", h.amenities.hairDryer == null ? "Não informado" : (h.amenities.hairDryer ? "Sim" : "Não")]
+          ].forEach(function (item) {
+            if (item[1] != null) amenities.appendChild(el("li", { text: item[0] + ": " + item[1] }));
+          });
+          body.appendChild(el("div", {}, [el("strong", { text: "Comodidades" }), amenities]));
+        }
+        if (h.details && h.details.length) {
+          var details = el("ul", {}, []);
+          h.details.forEach(function (detail) { details.appendChild(el("li", { text: detail })); });
+          body.appendChild(el("div", {}, [el("strong", { text: "Mais informações" }), details]));
+        }
         if (h.phone) { var pa = el("p", {}, []); pa.appendChild(el("a", { href: "tel:" + h.phone, text: "📞 " + h.phone })); body.appendChild(pa); }
         if (h.notes) body.appendChild(el("p", { class: "muted", text: h.notes }));
-        if (h.mapQuery || h.address) body.appendChild(mapLink(h.mapQuery || h.address));
+        if (h.mapLink) {
+          body.appendChild(el("a", { class: "maplink", href: h.mapLink, target: "_blank", rel: "noopener", text: "📍 Abrir endereço no Google Maps" }));
+        } else if (h.mapQuery || h.address) {
+          body.appendChild(mapLink(h.mapQuery || h.address, h.mapLabel || "Ver no mapa"));
+        }
         wrap.appendChild(el("article", {}, [header, body]));
       });
     }
