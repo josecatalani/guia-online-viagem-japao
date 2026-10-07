@@ -493,7 +493,9 @@
       $("rateLine").textContent = "1.000 ¥ ≈ R$ " + fmtBRL.format(1000 * rate);
       var d = localStorage.getItem(RATE_DATE_KEY);
       var status;
-      if (!d) status = "Cotação aproximada.";
+      if (!d) status = DATA.currency && DATA.currency.defaultRateDate
+        ? "Cotação de referência de " + DATA.currency.defaultRateDate + " · conecte à internet para atualizar."
+        : "Cotação aproximada.";
       else if (d === "manual") status = "Cotação ajustada manualmente.";
       else status = "Cotação automática · atualizada em " + d;
       $("rateStatus").textContent = status;

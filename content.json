@@ -11,7 +11,8 @@
   "currency": {
     "from": "JPY",
     "to": "BRL",
-    "defaultRate": 0.038,
+    "defaultRate": 0.031498,
+    "defaultRateDate": "07/10/2026",
     "note": "Cotação aproximada de iene (¥) para real (R$). Conecte à internet para atualizar."
   },
   "hotels": [
